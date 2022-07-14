@@ -172,7 +172,7 @@ function classNames(...classes) {
               <div className="mt-10">
                 <a href="#" className="text-base font-medium text-orange-600">
                   {' '}
-                  Learn more about how we're changing the world <span aria-hidden="true">&rarr;</span>{' '}
+                  Learn more about how we are changing the world <span aria-hidden="true">&rarr;</span>{' '}
                 </a>
               </div>
             </div>
