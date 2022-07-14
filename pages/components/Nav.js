@@ -174,7 +174,7 @@ const solutions = [
   {
     name: 'Integrations',
     href: '#',
-    description: "Connect with third-party tools that you're already using.",
+    description: "Connect with third-party tools that youre already using.",
     icon: ChipIcon,
   },
   {
