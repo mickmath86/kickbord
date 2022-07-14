@@ -26,8 +26,9 @@ export default function Home() {
      
         <Nav /> 
         <Hero />
-        <Logos />
+        
         <About />
+        <Logos />
         {/* <Services /> */}
         <ServicesTwo />
         <HeroCta />

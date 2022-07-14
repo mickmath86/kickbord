@@ -16,7 +16,8 @@ import {
   XIcon,
   ArrowCircleRightIcon, 
   CubeTransparentIcon, 
-  LightningBoltIcon
+  LightningBoltIcon, 
+  ArrowNarrowRightIcon
 } from '@heroicons/react/outline'
 import Services from './Services'
 
@@ -171,7 +172,7 @@ function IconOne() {
 
 function ServicesTwo() {
   return (
-    <div className="min-h-screen bg-black py-24">
+    <div className="min-h-screen bg-gray-900 py-24">
         <div className="mx-auto text-center">
             <h2 className="text-base font-semibold uppercase tracking-wider text-orange-600">Deploy faster</h2>
             <p className="mt-2 text-3xl font-extrabold tracking-tight text-orange-100 sm:text-4xl">
@@ -184,16 +185,21 @@ function ServicesTwo() {
         </div>
         <div className="container mx-auto max-w-6xl flex-col bg-grey-100">
             {solutions.map((item) => (
-                <div className=" flex text-white cursor-pointer rounded-md items-center p-6 hover:bg-gray-800 transition ease-in-out duration-250">
+                <div className=" flex text-white cursor-pointer rounded-md items-center p-6 group hover:bg-gray-800 backdrop-blur-m transition ease-in-out duration-200">
                     <div className="min-w-32">
-                        <div className="h-16 w-16 lg:h-32 lg:w-32 bg-orange-100 rounded-lg flex items-center justify-center  ">
-                            <item.icon className="h-10 w-10 lg:h-20 lg:w-20 text-orange-600 "/>
+                        <div className="h-16 w-16 lg:h-32 lg:w-32 bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-white ease-in-out duration-300">
+                            <item.icon className="h-10 w-10 lg:h-20 lg:w-20 text-orange-600 ease-in-out duration-300"/>
                         </div>
                     </div>
                     
                     <div className="ml-5">
-                        <h1 className="text-2xl lg:text-6xl ">{item.name}</h1>
-                        <p>{item.description}</p>
+                        <h1 className="text-2xl mt-5 font-bold group-hover:text-orange-500 ease-in-out duration-300 lg:text-5xl ">{item.name}</h1>
+                        <div className="flex items-center mt-2">
+                            <p className="text-gray-900 text-sm md:text-xl inline font-thin group-hover:text-white ease-in-out duration-300">{item.description}</p>
+                            <ArrowNarrowRightIcon className="text-gray-900 w-8 group-hover:text-orange-500 animate-pulse ml-4 " />
+                            {/* <div className="hidden group-hover:inline px-4 py-2 ml-2 rounded bg-white text-black hover:bg-orange-500">Learn More</div> */}
+                        </div>
+                     
                     </div>
                 </div>
                 

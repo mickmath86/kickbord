@@ -64,7 +64,7 @@ export default function Hero() {
                       </a>
                       <a
                         href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
+                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-500  hover:bg-opacity-70 sm:px-8"
                       >
                        Contact
                       </a>

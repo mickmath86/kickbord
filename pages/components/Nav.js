@@ -141,7 +141,7 @@ function IconSix(){
 const solutions = [
   {
     name: 'Media Advertising',
-    href: '#',
+    href: '/solutions',
     description: 'Get a better understanding of where your traffic is coming from.',
     icon: IconOne,
   },
@@ -205,7 +205,7 @@ export default function Nav() {
     <Popover className="relative bg-white">
       <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div className="flex justify-start  lg:w-0 lg:flex-1">
-          <a href="#">
+          <a href="/">
             <span className="sr-only">Workflow</span>
             <img
               className="h-8 w-auto border-2 border-black rounded-md p-1 sm:h-10"
@@ -215,7 +215,7 @@ export default function Nav() {
           </a>
         </div>
         <div className="-mr-2 -my-2 md:hidden">
-          <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+          <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500">
             <span className="sr-only">Open menu</span>
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </Popover.Button>
@@ -227,7 +227,7 @@ export default function Nav() {
                 <Popover.Button
                   className={classNames(
                     open ? 'text-gray-900' : 'text-gray-500',
-                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500'
                   )}
                 >
                   <span>Solutions</span>
@@ -301,7 +301,7 @@ export default function Nav() {
                 <Popover.Button
                   className={classNames(
                     open ? 'text-gray-900' : 'text-gray-500',
-                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500'
                   )}
                 >
                   <span>More</span>
@@ -371,12 +371,12 @@ export default function Nav() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    src="https://tailwindui.com/img/logos/workflow-mark-orange-600.svg"
                     alt="Workflow"
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500">
                     <span className="sr-only">Close menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -390,7 +390,7 @@ export default function Nav() {
                       href={solution.href}
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
-                      <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
+                      <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-orange-500 text-white">
                         <solution.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <div className="ml-4 text-base font-medium text-gray-900">{solution.name}</div>
@@ -425,13 +425,13 @@ export default function Nav() {
               <div className="mt-6">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-orange-600 hover:bg-orange-700"
                 >
                   Sign up
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                  <a href="#" className="text-orange-600 hover:text-orange-500">
                     Sign in
                   </a>
                 </p>
