@@ -8,8 +8,10 @@ import Hero from './components/Hero'
 import Logos from './components/Logos'
 import About from './components/About'
 import Services from './components/Services'
+import ServicesTwo from './components/ServicesTwo'
 import HeroCta from './components/HeroCta'
 import Footer from './components/Footer'
+
 
 export default function Home() {
   return (
@@ -21,15 +23,16 @@ export default function Home() {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
       </Head>
-      <div className="bg-black">
+     
         <Nav /> 
         <Hero />
         <Logos />
         <About />
-        <Services />
+        {/* <Services /> */}
+        <ServicesTwo />
         <HeroCta />
         <Footer />
-      </div>
+     
      
 
   
