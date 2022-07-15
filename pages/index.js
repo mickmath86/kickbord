@@ -7,7 +7,7 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Logos from './components/Logos'
 import About from './components/About'
-import Services from './components/Services'
+
 import ServicesTwo from './components/ServicesTwo'
 import HeroCta from './components/HeroCta'
 import Footer from './components/Footer'
@@ -29,7 +29,6 @@ export default function Home() {
         
         <About />
         <Logos />
-        {/* <Services /> */}
         <ServicesTwo />
         <HeroCta />
         <Footer />

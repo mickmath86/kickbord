@@ -19,7 +19,7 @@ import {
   LightningBoltIcon, 
   ArrowNarrowRightIcon
 } from '@heroicons/react/outline'
-import Services from './Services'
+
 
 
 // Icons
