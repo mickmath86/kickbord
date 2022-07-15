@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Nav from './components/Nav'
 import SolutionsList from './components/SolutionsList'
+import HeroCta from './components/HeroCta'
+import Footer from './components/Footer'
 
 
 
@@ -25,7 +27,6 @@ import {
   LightningBoltIcon, 
   ArrowNarrowRightIcon
 } from '@heroicons/react/outline'
-
 
 
 // Icons
@@ -129,7 +130,7 @@ function IconOne() {
       icon: IconThree,
     },
     {
-      name: 'Conversion Rate Optimization',
+      name: 'CVR Optimization',
       href: '#cro',
       description: 'Build strategic funnels that will drive your customers to convert',
       icon: IconTwo,
@@ -191,12 +192,12 @@ function solutions() {
     
     <div className="bg-white ">
         <div className="max-w-7xl flex mx-auto md:-translate-y-14  z-100 px-4 sm:px-6  lg:px-8">
-          <div className="grid grid-cols-2 bg-white items-center z-100 rounded-md  md:shadow gap-8 md:grid-cols-6 lg:grid-cols-6">
+          <div className="grid grid-cols-2 border-2 bg-white items-center z-100 rounded-md  md:shadow gap-8 md:grid-cols-6 lg:grid-cols-6 lg:gap-3 xl:gap-8">
             {solutionList.map((item) => 
             <>  
                 <Link href={item.href}>
                     <div className="col-span-1 w-auto flex items-center m-2 hover:bg-gray-50 cursor-pointer rounded p-2 justify-center md:col-span-2 lg:col-span-1">
-                        <item.icon className="w-12 text-orange-500 mr-2"/>
+                        <item.icon className="w-1/4 md:w-100 lg:inline xl:w-1/4 text-orange-500 mr-1"/>
                         <h1 className="font-bold text-sm text-gray-500" >{item.name}</h1>
                     </div>
                 </Link>
@@ -211,6 +212,8 @@ function solutions() {
     </div>
       
       <SolutionsList />
+      <HeroCta />
+      <Footer />
     </>
    
   )

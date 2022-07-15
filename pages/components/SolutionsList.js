@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons/react/outline'
+import { AnnotationIcon, CubeIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon, CubeTransparentIcon, ChipIcon } from '@heroicons/react/outline'
+
 import { useState } from 'react'
 // import BarChart from './BarChart'
 
@@ -185,13 +186,16 @@ export default function SolutionsList() {
 
   return (
     
-    <div className=" bg-white overflow-hidden ">
-      <div className="relative bg-white max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+    <div className=" bg-white overflow-hidden mb-16 md:mb-32 ">
+      <div className="relative grid bg-white max-w-xl mx-auto px-4 sm:px-6 lg:px-8 md:max-w-5xl lg:max-w-7xl ">
         {/* Section Start */}
-        <div id="media-advertising" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div className="relative mt-12 bg-white md:w-full lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
-            <div className="flex place-items-start">        
-                <IconOne className=""/>
+            <div className="flex place-items-start">       
+            <div className="w-100 lg:w-3/4">
+                   <IconOne className="text-orange-500  mr-5"/>
+                </div> 
+               
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                         Media Advertising
@@ -215,7 +219,7 @@ export default function SolutionsList() {
                         ))}
                     </dl>
                 </div>
-            </div>    
+             </div>    
            </div>
 
           <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
@@ -240,11 +244,12 @@ export default function SolutionsList() {
                 </defs>
                 <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
             </svg>
-           
-
-            {/* <BarChart 
-              chartData={}
-            /> */}
+            <img
+                className="relative mx-auto"
+                width={490}
+                src="https://tailwindui.com/img/features/feature-example-1.png"
+                alt=""
+            />
             </div>
         </div> 
         
@@ -273,73 +278,84 @@ export default function SolutionsList() {
           </defs>
           <rect width={404} height={784} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
         </svg> */}
-{/* Section Two */}
-        <div id="ecommerce-strategy" className="relative mt-12 sm:mt-16 lg:mt-24">
-          <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-            <div className="lg:col-start-2">
-              <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">Always in the loop</h3>
-              <p className="mt-3 text-lg text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
-                cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
-              </p>
 
-              <dl className="mt-10 space-y-10">
-                {communicationFeatures.map((item) => (
-                  <div key={item.id} className="relative">
-                    <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                        <item.icon className="h-6 w-6" aria-hidden="true" />
-                      </div>
-                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
-                    </dt>
-                    <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
 
-            <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-              <svg
+        {/* Section Two */}
+        <div className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center  xl:items-start xl:min-h-[65vh] ">
+          <div className="relative order-last">
+            <div className="flex place-items-start">        
+                 <div className="w-100 lg:w-3/4">
+                   <IconThree className="text-orange-500  mr-5"/>
+                </div> 
+                <div>
+                    <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+                        eCommerce Strategy
+                    </h3>
+                    <p className="mt-3 text-lg text-gray-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
+                        officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
+                        Totam, velit.
+                    </p>
+                    <dl className="mt-10 space-y-10">
+                        {transferFeatures.map((item) => (
+                        <div key={item.id} className="relative">
+                            <dt>
+                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                                <item.icon className="h-6 w-6" aria-hidden="true" />
+                                </div>
+                                <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
+                            </dt>
+                            <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
+                        </div>
+                        ))}
+                    </dl>
+                </div>
+             </div>    
+           </div>
+
+          <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+            <svg
                 className="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
                 width={784}
                 height={404}
                 fill="none"
                 viewBox="0 0 784 404"
-                aria-hidden="true"
-              >
+            >
                 <defs>
-                  <pattern
-                    id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                <pattern
+                    id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
                     x={0}
                     y={0}
                     width={20}
                     height={20}
                     patternUnits="userSpaceOnUse"
-                  >
+                >
                     <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-                  </pattern>
+                </pattern>
                 </defs>
-                <rect width={784} height={404} fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
-              </svg>
-              <img
+                <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+            </svg>
+            <img
                 className="relative mx-auto"
                 width={490}
-                src="https://tailwindui.com/img/features/feature-example-2.png"
+                src="https://tailwindui.com/img/features/feature-example-1.png"
                 alt=""
-              />
+            />
             </div>
-          </div>
-        </div>
+        </div> 
+        
         {/* section 2 end */}
 
         {/* section 3 start */}
-        <div className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
             <div className="flex place-items-start">        
-                <IconOne className=""/>
+                <div className="w-100 lg:w-3/4">
+                   <IconTwo className="text-orange-500  mr-5"/>
+                </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                        Media Advertising
+                       Conversion Rate Optimization
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
@@ -396,72 +412,80 @@ export default function SolutionsList() {
         {/* section 3 end */}
 
         {/* section 4 start */}
-        <div id="analytics" className="relative mt-12 sm:mt-16 lg:mt-24">
-          <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-            <div className="lg:col-start-2">
-              <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">Always in the loop</h3>
-              <p className="mt-3 text-lg text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
-                cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
-              </p>
+        <div className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
+          <div className="relative order-last">
+            <div className="flex place-items-start">        
+                 <div className="w-3/4 md:w-1/4 lg:w-3/4">
+                   <CubeTransparentIcon className="text-orange-500  mr-5"/>
+                </div> 
+                <div>
+                    <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+                        Analytics
+                    </h3>
+                    <p className="mt-3 text-lg text-gray-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
+                        officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
+                        Totam, velit.
+                    </p>
+                    <dl className="mt-10 space-y-10">
+                        {transferFeatures.map((item) => (
+                        <div key={item.id} className="relative">
+                            <dt>
+                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                                <item.icon className="h-6 w-6" aria-hidden="true" />
+                                </div>
+                                <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
+                            </dt>
+                            <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
+                        </div>
+                        ))}
+                    </dl>
+                </div>
+             </div>    
+           </div>
 
-              <dl className="mt-10 space-y-10">
-                {communicationFeatures.map((item) => (
-                  <div key={item.id} className="relative">
-                    <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                        <item.icon className="h-6 w-6" aria-hidden="true" />
-                      </div>
-                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
-                    </dt>
-                    <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-
-            <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-              <svg
+          <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+            <svg
                 className="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
                 width={784}
                 height={404}
                 fill="none"
                 viewBox="0 0 784 404"
-                aria-hidden="true"
-              >
+            >
                 <defs>
-                  <pattern
-                    id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                <pattern
+                    id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
                     x={0}
                     y={0}
                     width={20}
                     height={20}
                     patternUnits="userSpaceOnUse"
-                  >
+                >
                     <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-                  </pattern>
+                </pattern>
                 </defs>
-                <rect width={784} height={404} fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
-              </svg>
-              <img
+                <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+            </svg>
+            <img
                 className="relative mx-auto"
                 width={490}
-                src="https://tailwindui.com/img/features/feature-example-2.png"
+                src="https://tailwindui.com/img/features/feature-example-1.png"
                 alt=""
-              />
+            />
             </div>
-          </div>
-        </div>
+        </div> 
         {/* section 4 end */}
 
         {/* section 5 start */}
-        <div id="integrations" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div id="integrations" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
             <div className="flex place-items-start">        
-                <IconOne className=""/>
+                  <div className="w-3/4 md:w-1/4 lg:w-3/4">
+                    <ChipIcon className="text-orange-500  mr-5"/>
+                  </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                        Media Advertising
+                        Integrations
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
@@ -518,62 +542,68 @@ export default function SolutionsList() {
         {/* section 5 end */}
 
         {/* section 6 start */}
-        <div id="automations" className="relative mt-12 sm:mt-16 lg:mt-24">
-          <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-            <div className="lg:col-start-2">
-              <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">Always in the loop</h3>
-              <p className="mt-3 text-lg text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
-                cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
-              </p>
+        <div className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
+          <div className="relative order-last">
+            <div className="flex place-items-start">        
+                 <div className="w-3/4 md:w-1/4 lg:w-3/4">
+                   <LightningBoltIcon className="text-orange-500  mr-5"/>
+                </div> 
+                <div>
+                    <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+                        Automations
+                    </h3>
+                    <p className="mt-3 text-lg text-gray-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
+                        officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
+                        Totam, velit.
+                    </p>
+                    <dl className="mt-10 space-y-10">
+                        {transferFeatures.map((item) => (
+                        <div key={item.id} className="relative">
+                            <dt>
+                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                                <item.icon className="h-6 w-6" aria-hidden="true" />
+                                </div>
+                                <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
+                            </dt>
+                            <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
+                        </div>
+                        ))}
+                    </dl>
+                </div>
+             </div>    
+           </div>
 
-              <dl className="mt-10 space-y-10">
-                {communicationFeatures.map((item) => (
-                  <div key={item.id} className="relative">
-                    <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                        <item.icon className="h-6 w-6" aria-hidden="true" />
-                      </div>
-                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
-                    </dt>
-                    <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-
-            <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-              <svg
+          <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+            <svg
                 className="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
                 width={784}
                 height={404}
                 fill="none"
                 viewBox="0 0 784 404"
-                aria-hidden="true"
-              >
+            >
                 <defs>
-                  <pattern
-                    id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                <pattern
+                    id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
                     x={0}
                     y={0}
                     width={20}
                     height={20}
                     patternUnits="userSpaceOnUse"
-                  >
+                >
                     <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-                  </pattern>
+                </pattern>
                 </defs>
-                <rect width={784} height={404} fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
-              </svg>
-              <img
+                <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+            </svg>
+            <img
                 className="relative mx-auto"
                 width={490}
-                src="https://tailwindui.com/img/features/feature-example-2.png"
+                src="https://tailwindui.com/img/features/feature-example-1.png"
                 alt=""
-              />
+            />
             </div>
-          </div>
-        </div>
+        </div> 
         {/* section 6 end */}
       </div>
     </div>
