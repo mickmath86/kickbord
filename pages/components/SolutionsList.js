@@ -1,5 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons/react/outline'
+import { useState } from 'react'
+// import BarChart from './BarChart'
+
 
 const transferFeatures = [
   {
@@ -175,6 +178,11 @@ const content = [
 ]
 
 export default function SolutionsList() {
+  // const [userData, setUserData] = useState({
+  //   labels: , 
+  //   datasets: []
+  // })
+
   return (
     
     <div className=" bg-white overflow-hidden ">
@@ -232,12 +240,11 @@ export default function SolutionsList() {
                 </defs>
                 <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
             </svg>
-            <img
-                className="relative mx-auto"
-                width={490}
-                src="https://tailwindui.com/img/features/feature-example-1.png"
-                alt=""
-            />
+           
+
+            {/* <BarChart 
+              chartData={}
+            /> */}
             </div>
         </div> 
         

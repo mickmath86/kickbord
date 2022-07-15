@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Nav from './components/Nav'
 import SolutionsList from './components/SolutionsList'
 
+
+
 import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
@@ -187,7 +189,7 @@ function solutions() {
         
     </header>
     
-    {/* <div className="bg-white ">
+    <div className="bg-white ">
         <div className="max-w-7xl flex mx-auto md:-translate-y-14  z-100 px-4 sm:px-6  lg:px-8">
           <div className="grid grid-cols-2 bg-white items-center z-100 rounded-md  md:shadow gap-8 md:grid-cols-6 lg:grid-cols-6">
             {solutionList.map((item) => 
@@ -206,7 +208,7 @@ function solutions() {
             
           </div>
         </div>
-    </div> */}
+    </div>
       
       <SolutionsList />
     </>
