@@ -26,13 +26,13 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 function IconOne() {
   return (
     <svg
-      width="48"
-      height="48"
+      width="auto"
+      height="auto"
       viewBox="0 0 48 48"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="48" height="48" rx="8" fill="#FFEDD5" />
+      
       <path
         d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z"
         stroke="#ea580c"
@@ -65,7 +65,7 @@ function IconTwo() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="48" height="48" rx="8" fill="#FFEDD5" />
+      {/* <rect width="48" height="48" rx="8" fill="#FFEDD5" /> */}
       <path
         d="M28.0413 20L23.9998 13L19.9585 20M32.0828 27.0001L36.1242 34H28.0415M19.9585 34H11.8755L15.9171 27"
         stroke="#ea580c"
@@ -91,7 +91,7 @@ function IconThree() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="48" height="48" rx="8" fill="#FFEDD5" />
+      {/* <rect width="48" height="48" rx="8" fill="#FFEDD5" /> */}
       <rect x="13" y="32" width="2" height="4" fill="#FDBA74" />
       <rect x="17" y="28" width="2" height="8" fill="#FDBA74" />
       <rect x="21" y="24" width="2" height="12" fill="#FDBA74" />
@@ -368,14 +368,14 @@ export default function Nav() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 z-50 transition transform origin-top-right md:hidden">
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
-                <div>
+                <div className="border-2 border-black rounded">
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-orange-600.svg"
+                    src="/images/logo.png"
                     alt="Workflow"
                   />
                 </div>
@@ -394,7 +394,7 @@ export default function Nav() {
                       href={solution.href}
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
-                      <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-orange-500 text-white">
+                      <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-orange-100 text-orange-500">
                         <solution.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <div className="ml-4 text-base font-medium text-gray-900">{solution.name}</div>
