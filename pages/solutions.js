@@ -109,7 +109,7 @@ function IconOne() {
   const solutionList = [
     {
       name: 'Media Advertising',
-      href: '#',
+      href: '/solutions#media-advertising',
       description: 'Get a better understanding of where your traffic is coming from.',
       icon: IconOne,
     },
@@ -122,32 +122,32 @@ function IconOne() {
    
     {
       name: 'ECommerce Strategy',
-      href: '#',
+      href: '#ecommerce-strategy',
       description: "Speak directly to your customers in a more meaningful way",
       icon: IconThree,
     },
     {
       name: 'Conversion Rate Optimization',
-      href: '#',
+      href: '#cro',
       description: 'Build strategic funnels that will drive your customers to convert',
       icon: IconTwo,
     },
     {
       name: 'Analytics',
-      href: '#',
+      href: '#analytics',
       description: 'Get a better understanding of where your traffic is coming from and how its performing',
       icon: CubeTransparentIcon,
   
     },
     {
       name: 'Integrations',
-      href: '#',
+      href: '#integrations',
       description: "Connect with third-party tools that youre already using.",
       icon: ChipIcon,
     },
     {
       name: 'Automations',
-      href: '#',
+      href: '#automations',
       description: "Build strategic funnels that will drive your customers to convert",
       icon: LightningBoltIcon,
     },
@@ -186,13 +186,18 @@ function solutions() {
     </header>
     
     <div className="bg-white ">
-        <div className="max-w-7xl mx-auto md:-translate-y-14  z-100 px-4 sm:px-6  lg:px-8">
-          <div className="grid grid-cols-2 bg-white z-100 rounded-md  md:shadow gap-8 md:grid-cols-6 lg:grid-cols-6">
+        <div className="max-w-7xl flex mx-auto md:-translate-y-14  z-100 px-4 sm:px-6  lg:px-8">
+          <div className="grid grid-cols-2 bg-white items-center z-100 rounded-md  md:shadow gap-8 md:grid-cols-6 lg:grid-cols-6">
             {solutionList.map((item) => 
-                <div className="col-span-1 w-auto flex items-center m-2 hover:bg-gray-50 cursor-pointer rounded p-2 justify-center md:col-span-2 lg:col-span-1">
-                    <item.icon className="w-12 text-orange-500 mr-2"/>
-                    <h1 className="font-bold text-sm text-gray-500" >{item.name}</h1>
-                </div>
+            <>  
+                <a href={item.href}>
+                    <div className="col-span-1 w-auto flex items-center m-2 hover:bg-gray-50 cursor-pointer rounded p-2 justify-center md:col-span-2 lg:col-span-1">
+                        <item.icon className="w-12 text-orange-500 mr-2"/>
+                        <h1 className="font-bold text-sm text-gray-500" >{item.name}</h1>
+                    </div>
+                </a>
+            </>
+                
             )}
             
             
