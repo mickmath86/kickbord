@@ -142,7 +142,7 @@ function IconSix(){
 const solutions = [
   {
     name: 'Media Advertising',
-    href: '/solutions',
+    href: '/solutions#media-advertising',
     description: 'Get a better understanding of where your traffic is coming from.',
     icon: IconOne,
   },
@@ -155,32 +155,32 @@ const solutions = [
  
   {
     name: 'ECommerce Strategy',
-    href: '#',
+    href: '/solutions#ecommerce-strategy',
     description: "Speak directly to your customers in a more meaningful way",
     icon: IconThree,
   },
   {
     name: 'Conversion Rate Optimization',
-    href: '#',
+    href: '/solutions#cvr-optimization',
     description: 'Build strategic funnels that will drive your customers to convert',
     icon: IconTwo,
   },
   {
     name: 'Analytics',
-    href: '#',
+    href: '/solutions#analytics',
     description: 'Get a better understanding of where your traffic is coming from and how its performing',
     icon: CubeTransparentIcon,
 
   },
   {
     name: 'Integrations',
-    href: '#',
+    href: '/solutions#integrations',
     description: "Connect with third-party tools that youre already using.",
     icon: ChipIcon,
   },
   {
     name: 'Automations',
-    href: '#',
+    href: '/solutions#automations',
     description: "Build strategic funnels that will drive your customers to convert",
     icon: LightningBoltIcon,
   },
@@ -273,12 +273,12 @@ export default function Nav() {
                         ))}
                       </div>
                       <div className="p-5 bg-gray-50 sm:p-8">
-                        <a href="#" className="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
+                        <a href="/solutions" className="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
                           <div className="flex items-center">
-                            <div className="text-base font-medium text-gray-900">Enterprise</div>
-                            <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-orange-100 text-orange-800">
+                            <div className="text-base font-medium text-gray-900">See all Solutions</div>
+                            {/* <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-orange-100 text-orange-800">
                               New
-                            </span>
+                            </span> */}
                           </div>
                           <p className="mt-1 text-sm text-gray-500">
                             Empower your entire team with even more advanced tools.
@@ -299,7 +299,9 @@ export default function Nav() {
             Docs
           </a>
 
-          <Popover className="relative">
+        {/* MORE Nav Drop down */}
+        
+          {/* <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
@@ -346,7 +348,7 @@ export default function Nav() {
                 </Transition>
               </>
             )}
-          </Popover>
+          </Popover> */}
         </Popover.Group>
         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
          

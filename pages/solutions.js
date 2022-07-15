@@ -131,7 +131,7 @@ function IconOne() {
     },
     {
       name: 'CVR Optimization',
-      href: '#cro',
+      href: '#cvr-optimization',
       description: 'Build strategic funnels that will drive your customers to convert',
       icon: IconTwo,
     },

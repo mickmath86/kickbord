@@ -186,10 +186,10 @@ export default function SolutionsList() {
 
   return (
     
-    <div className=" bg-white overflow-hidden mb-16 md:mb-32 ">
+    <div  className=" bg-white overflow-hidden mb-16 md:mb-32 ">
       <div className="relative grid bg-white max-w-xl mx-auto px-4 sm:px-6 lg:px-8 md:max-w-5xl lg:max-w-7xl ">
         {/* Section Start */}
-        <div className="relative mt-12 bg-white md:w-full lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
+        <div id="media-advertising" className="relative mt-12 bg-white md:w-full lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
             <div className="flex place-items-start">       
             <div className="w-100 lg:w-3/4">
@@ -222,7 +222,8 @@ export default function SolutionsList() {
              </div>    
            </div>
 
-          <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+          <div className="mt-10 -mx-4 rounded-md h-3/4 relative lg:mt-0" aria-hidden="true">
+            
             <svg
                 className="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
                 width={784}
@@ -244,10 +245,11 @@ export default function SolutionsList() {
                 </defs>
                 <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
             </svg>
+            
             <img
-                className="relative mx-auto"
+                className="relative mx-auto rounded-xl drop-shadow-lg shadow-lg"
                 width={490}
-                src="https://tailwindui.com/img/features/feature-example-1.png"
+                src="/images/media.png"
                 alt=""
             />
             </div>
@@ -281,7 +283,7 @@ export default function SolutionsList() {
 
 
         {/* Section Two */}
-        <div className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center  xl:items-start xl:min-h-[65vh] ">
+        <div id="ecommerce-strategy" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center  xl:items-start xl:min-h-[65vh] ">
           <div className="relative order-last">
             <div className="flex place-items-start">        
                  <div className="w-100 lg:w-3/4">
@@ -347,7 +349,7 @@ export default function SolutionsList() {
         {/* section 2 end */}
 
         {/* section 3 start */}
-        <div className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
+        <div id="cvr-optimization" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
             <div className="flex place-items-start">        
                 <div className="w-100 lg:w-3/4">
@@ -412,7 +414,7 @@ export default function SolutionsList() {
         {/* section 3 end */}
 
         {/* section 4 start */}
-        <div className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
+        <div id="analytics" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative order-last">
             <div className="flex place-items-start">        
                  <div className="w-3/4 md:w-1/4 lg:w-3/4">
@@ -542,7 +544,7 @@ export default function SolutionsList() {
         {/* section 5 end */}
 
         {/* section 6 start */}
-        <div className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
+        <div id="automations" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative order-last">
             <div className="flex place-items-start">        
                  <div className="w-3/4 md:w-1/4 lg:w-3/4">
