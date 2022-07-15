@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 import Nav from './components/Nav'
 import SolutionsList from './components/SolutionsList'
 
@@ -190,17 +190,18 @@ function solutions() {
           <div className="grid grid-cols-2 bg-white items-center z-100 rounded-md  md:shadow gap-8 md:grid-cols-6 lg:grid-cols-6">
             {solutionList.map((item) => 
             <>  
-                <a href={item.href}>
+                <Link href={item.href}>
                     <div className="col-span-1 w-auto flex items-center m-2 hover:bg-gray-50 cursor-pointer rounded p-2 justify-center md:col-span-2 lg:col-span-1">
                         <item.icon className="w-12 text-orange-500 mr-2"/>
                         <h1 className="font-bold text-sm text-gray-500" >{item.name}</h1>
                     </div>
-                </a>
+                </Link>
+              
             </>
                 
             )}
             
-            
+            z
           </div>
         </div>
     </div>
