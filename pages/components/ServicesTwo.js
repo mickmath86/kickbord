@@ -124,6 +124,7 @@ function IconOne() {
   }
   const solutions = [
     {
+      id:1, 
       name: 'Media Advertising',
       href: '#',
       description: 'Get a better understanding of where your traffic is coming from.',
@@ -137,18 +138,21 @@ function IconOne() {
     // },
    
     {
+      id: 2, 
       name: 'ECommerce Strategy',
       href: '#',
       description: "Speak directly to your customers in a more meaningful way",
       icon: IconThree,
     },
     {
-      name: 'Conversion Rate Optimization',
+      id: 3, 
+        name: 'Conversion Rate Optimization',
       href: '#',
       description: 'Build strategic funnels that will drive your customers to convert',
       icon: IconTwo,
     },
     {
+        id: 4, 
       name: 'Analytics',
       href: '#',
       description: 'Get a better understanding of where your traffic is coming from and how its performing',
@@ -156,12 +160,14 @@ function IconOne() {
   
     },
     {
+        id: 5, 
       name: 'Integrations',
       href: '#',
       description: "Connect with third-party tools that youre already using.",
       icon: ChipIcon,
     },
     {
+        id: 6, 
       name: 'Automations',
       href: '#',
       description: "Build strategic funnels that will drive your customers to convert",
@@ -185,7 +191,7 @@ function ServicesTwo() {
         </div>
         <div className="container mx-auto max-w-6xl flex-col bg-grey-100">
             {solutions.map((item) => (
-                <div className=" flex text-white cursor-pointer rounded-md items-center p-6 group hover:bg-gray-800 backdrop-blur-m transition ease-in-out duration-200">
+                <div key={item.id} className=" flex text-white cursor-pointer rounded-md items-center p-6 group hover:bg-gray-800 backdrop-blur-m transition ease-in-out duration-200">
                     <div className="min-w-32">
                         <div className="h-16 w-16 lg:h-32 lg:w-32 bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-white ease-in-out duration-300">
                             <item.icon className="h-10 w-10 lg:h-20 lg:w-20 text-orange-600 ease-in-out duration-300"/>
