@@ -257,33 +257,38 @@ export default function Nav() {
                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                       <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                         {solutions.map((solution) => (
-                          <a
+                          <Link
                             key={solution.name}
                             href={solution.href}
                             className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                           >
-                            <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-orange-100 text-orange-600 sm:h-12 sm:w-12">
-                              <solution.icon className="h-6 w-6" aria-hidden="true" />
+                            <div>
+                              <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-orange-100 text-orange-600 sm:h-12 sm:w-12">
+                                <solution.icon className="h-6 w-6" aria-hidden="true" />
+                              </div>
+                              <div className="ml-4">
+                                <p className="text-base font-medium text-gray-900">{solution.name}</p>
+                                <p className="mt-1 text-sm text-gray-500">{solution.description}</p>
+                              </div>
                             </div>
-                            <div className="ml-4">
-                              <p className="text-base font-medium text-gray-900">{solution.name}</p>
-                              <p className="mt-1 text-sm text-gray-500">{solution.description}</p>
-                            </div>
-                          </a>
+                            
+                          </Link>
                         ))}
                       </div>
                       <div className="p-5 bg-gray-50 sm:p-8">
-                        <a href="/solutions" className="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
-                          <div className="flex items-center">
-                            <div className="text-base font-medium text-gray-900">See all Solutions</div>
-                            {/* <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-orange-100 text-orange-800">
-                              New
-                            </span> */}
+                        <Link href="/solutions" className="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
+                          <div>
+                            <div className="flex items-center">
+                              <div className="text-base font-medium text-gray-900">See all Solutions</div>
+                              {/* <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-orange-100 text-orange-800">
+                                New
+                              </span> */}
+                            </div>
+                            <p className="mt-1 text-sm text-gray-500">
+                              Empower your entire team with even more advanced tools.
+                            </p>
                           </div>
-                          <p className="mt-1 text-sm text-gray-500">
-                            Empower your entire team with even more advanced tools.
-                          </p>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </Popover.Panel>
@@ -397,7 +402,7 @@ export default function Nav() {
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
                       <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-orange-100 text-orange-500">
-                        <solution.icon className="h-6 w-6" aria-hidden="true" />
+                          <solution.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <div className="ml-4 text-base font-medium text-gray-900">{solution.name}</div>
                     </a>
