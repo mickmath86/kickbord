@@ -356,11 +356,11 @@ export default function Nav() {
           </Popover> */}
         </Popover.Group>
         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-         <Link href="/schedule-a-call"
-            className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-orange-600 hover:bg-orange-700"
-          >
-        
-            Get Started
+         <Link href="/schedule-a-call">
+          <div className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-orange-600 hover:bg-orange-700">
+          Get Started
+          </div>
+          
         </Link>
           
         </div>
