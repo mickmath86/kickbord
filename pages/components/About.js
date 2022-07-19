@@ -149,7 +149,7 @@ function classNames(...classes) {
               <h3 className="text-2xl pt-6">Lets be honest, scaling a brand is <span className="underline font-bold">tough.</span> </h3>
               <div className="mt-6 text-gray-500 space-y-6">
                 <p className="text-lg">
-                There are so many moving parts and pieces, and it can be easy to quickly lose track of what'`&quot;`s important. With all of the noise being put out by subpar ads, shifting audiences, and ever-chaning consumer desires, we understand the the struggle owners face when trying to effectively market their prodcuts on top of all the other responsibilities that fall on their shoulders. 
+                There are so many moving parts and pieces, and it can be easy to quickly lose track of what's important. With all of the noise being put out by subpar ads, shifting audiences, and ever-chaning consumer desires, we understand the the struggle owners face when trying to effectively market their prodcuts on top of all the other responsibilities that fall on their shoulders. 
                 </p>
                 <p className="text-lg ">
                 Kickbord is on a mission to provide brand owners the best marketing minds the industry has to offer so owners can go back to  doing what they do best - <span className="font-bold">running their business. </span>
