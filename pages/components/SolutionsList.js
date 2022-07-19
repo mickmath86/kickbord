@@ -210,7 +210,7 @@ export default function SolutionsList() {
         <div id="ecommerce-strategy" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center  xl:items-start xl:min-h-[65vh] ">
           <div className="relative order-last">
             <div className="flex place-items-start">        
-                 <div className="w-100 lg:w-3/4">
+                 <div className="w-full lg:w-3/4">
                    <IconThree className="text-sky-500  mr-5"/>
                 </div> 
                 <div>
@@ -274,7 +274,7 @@ export default function SolutionsList() {
         <div id="cvr-optimization" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
             <div className="flex place-items-start">        
-                <div className="w-100 lg:w-3/4">
+                <div className="w-full lg:w-3/4">
                    <IconTwo className="text-sky-500  mr-5"/>
                 </div> 
                 <div>
@@ -337,7 +337,7 @@ export default function SolutionsList() {
         <div id="analytics" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative order-last">
             <div className="flex place-items-start">        
-                 <div className="w-3/4 md:w-1/4 lg:w-3/4">
+                 <div className="w-full md:w-1/4 lg:w-3/4">
                    <CubeTransparentIcon className="text-sky-500  mr-5"/>
                 </div> 
                 <div>
@@ -400,7 +400,7 @@ export default function SolutionsList() {
         <div id="integrations" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
             <div className="flex place-items-start">        
-                  <div className="w-3/4 md:w-1/4 lg:w-3/4">
+                  <div className="w-full md:w-1/4 lg:w-3/4">
                     <ChipIcon className="text-sky-500  mr-5"/>
                   </div> 
                 <div>
@@ -467,7 +467,7 @@ Kickboard enables you to quickly set up and get started using data-driven decisi
         <div id="automations" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative order-last">
             <div className="flex place-items-start">        
-                 <div className="w-3/4 md:w-1/4 lg:w-3/4">
+                 <div className="w-full md:w-1/4 lg:w-3/4">
                    <LightningBoltIcon className="text-sky-500  mr-5"/>
                 </div> 
                 <div>
