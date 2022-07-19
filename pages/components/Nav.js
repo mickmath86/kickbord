@@ -18,9 +18,13 @@ import {
   XIcon,
   ArrowCircleRightIcon, 
   CubeTransparentIcon, 
-  LightningBoltIcon
+  LightningBoltIcon, 
+  TrendingUpIcon,
+  QrcodeIcon, 
+  SpeakerphoneIcon, 
+  ViewGridAddIcon
 } from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+import { ChevronDownIcon,  } from '@heroicons/react/solid'
 import { IconOne, IconTwo, IconThree } from '../../icons'
 
 
@@ -30,7 +34,7 @@ const solutions = [
     name: 'Media Advertising',
     href: '/solutions#media-advertising',
     description: 'Get a better understanding of where your traffic is coming from.',
-    icon: IconOne,
+    icon: QrcodeIcon,
   },
   // {
   //   name: 'Google Advertising',
@@ -43,13 +47,13 @@ const solutions = [
     name: 'eCommerce Strategy',
     href: '/solutions#ecommerce-strategy',
     description: "Speak directly to your customers in a more meaningful way",
-    icon: IconThree,
+    icon: TrendingUpIcon,
   },
   {
     name: 'Conversion Rate Optimization',
     href: '/solutions#cvr-optimization',
     description: 'Build strategic funnels that will drive your customers to convert',
-    icon: IconTwo,
+    icon: ViewGridAddIcon,
   },
   {
     name: 'Analytics',
@@ -306,7 +310,7 @@ export default function Nav() {
               </div>
             </div>
             <div className="py-6 px-5">
-              <div className="grid grid-cols-2 gap-4">
+              {/* <div className="grid grid-cols-2 gap-4">
                 <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                   Pricing
                 </a>
@@ -327,20 +331,20 @@ export default function Nav() {
                     {resource.name}
                   </a>
                 ))}
-              </div>
+              </div> */}
               <div className="mt-6">
                 <a
-                  href="#"
+                  href="/schedule-a-call"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700"
                 >
-                  Sign up
+                  Get Started
                 </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
+                {/* <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
                   <a href="#" className="text-sky-600 hover:text-sky-500">
                     Sign in
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
