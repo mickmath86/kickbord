@@ -113,13 +113,13 @@ export default function SolutionsList() {
         {/* Section Start */}
         <div id="media-advertising" className="relative mt-12 bg-white md:w-full lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
-            <div className="flex place-items-start">       
-            <div className="w-full lg:w-3/4">
-                   <ArrowsExpandIcon className="text-sky-500 h-24 w-24 mr-5"/>
+            <div className="flex relative place-items-start">       
+            <div className="w-auto lg:w-3/4 z-20">
+                   <ArrowsExpandIcon className="text-sky-500 h-12 w-12  mr-5"/>
             </div> 
                
                 <div>
-                    <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+                    <h3 className="text-2xl z-100 font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                         Media Advertising
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
@@ -210,8 +210,8 @@ export default function SolutionsList() {
         <div id="ecommerce-strategy" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center  xl:items-start xl:min-h-[65vh] ">
           <div className="relative order-last">
             <div className="flex place-items-start">        
-                 <div className="w-full lg:w-3/4">
-                   <TrendingUpIcon className="text-sky-500  mr-5"/>
+                <div className="w-auto lg:w-3/4 z-20">
+                      <TrendingUpIcon className="text-sky-500 h-12 w-12  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -274,8 +274,8 @@ export default function SolutionsList() {
         <div id="cvr-optimization" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
             <div className="flex place-items-start">        
-                <div className="w-full lg:w-3/4">
-                   <ViewGridAddIcon className="text-sky-500  mr-5"/>
+                <div className="w-auto lg:w-3/4 z-20">
+                      <ViewGridAddIcon className="text-sky-500 h-12 w-12  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -337,8 +337,8 @@ export default function SolutionsList() {
         <div id="analytics" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative order-last">
             <div className="flex place-items-start">        
-                 <div className="w-full md:w-1/4 lg:w-3/4">
-                   <CubeTransparentIcon className="text-sky-500  mr-5"/>
+                <div className="w-auto lg:w-3/4 z-20">
+                      <CubeTransparentIcon className="text-sky-500 h-12 w-12  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -400,9 +400,9 @@ export default function SolutionsList() {
         <div id="integrations" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
             <div className="flex place-items-start">        
-                  <div className="w-full md:w-1/4 lg:w-3/4">
-                    <ChipIcon className="text-sky-500  mr-5"/>
-                  </div> 
+                <div className="w-auto lg:w-3/4 z-20">
+                      <ChipIcon className="text-sky-500 h-12 w-12  mr-5"/>
+                </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                         Integrations
@@ -467,8 +467,8 @@ Kickboard enables you to quickly set up and get started using data-driven decisi
         <div id="automations" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative order-last">
             <div className="flex place-items-start">        
-                 <div className="w-full md:w-1/4 lg:w-3/4">
-                   <LightningBoltIcon className="text-sky-500  mr-5"/>
+                <div className="w-auto lg:w-3/4 z-20">
+                      <LightningBoltIcon className="text-sky-500 h-12 w-12  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">

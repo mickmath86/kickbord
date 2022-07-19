@@ -123,9 +123,9 @@ function solutions() {
             {solutionList.map((item) => 
             <>  
                 <Link href={item.href}>
-                    <div className="col-span-1 w-auto flex items-center m-2 hover:bg-gray-50 cursor-pointer rounded p-2 justify-center md:col-span-2 lg:col-span-1">
-                        <item.icon className=" min-w-[1rem] md:w-100 lg:inline xl:w-1/4 text-sky-500 mr-1"/>
-                        <h1 className="font-bold text-sm text-gray-500" >{item.name}</h1>
+                    <div className="col-span-1 w-auto flex items-center justify-start m-2 hover:bg-gray-50 cursor-pointer rounded p-2  md:col-span-2 lg:col-span-1">
+                        <item.icon className=" w-100 md:w-100 lg:inline xl:w-1/4 text-sky-500 mr-1"/>
+                        <h1 className="font-bold text-sm text-right text-gray-500" >{item.name}</h1>
                     </div>
                 </Link>
               
