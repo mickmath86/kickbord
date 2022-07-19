@@ -34,24 +34,24 @@ function IconOne() {
     >
       
       <path
-        d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z"
-        stroke="#ea580c"
-        strokeWidth="2"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M16.7417 19.8094V28.1906L24 32.3812L31.2584 28.1906V19.8094L24 15.6188L16.7417 19.8094Z"
-        stroke="#FDBA74"
-        strokeWidth="2"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M20.7417 22.1196V25.882L24 27.7632L27.2584 25.882V22.1196L24 20.2384L20.7417 22.1196Z"
-        stroke="#ea580c"
-        strokeWidth="2"
-      />
+          d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z"
+          stroke="#0284c7"
+          strokeWidth="2"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M16.7417 19.8094V28.1906L24 32.3812L31.2584 28.1906V19.8094L24 15.6188L16.7417 19.8094Z"
+          stroke="#7dd3fc"
+          strokeWidth="2"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M20.7417 22.1196V25.882L24 27.7632L27.2584 25.882V22.1196L24 20.2384L20.7417 22.1196Z"
+          stroke="#0284c7"
+          strokeWidth="2"
+        />
     </svg>
   )
 }
@@ -68,14 +68,14 @@ function IconTwo() {
       {/* <rect width="48" height="48" rx="8" fill="#FFEDD5" /> */}
       <path
         d="M28.0413 20L23.9998 13L19.9585 20M32.0828 27.0001L36.1242 34H28.0415M19.9585 34H11.8755L15.9171 27"
-        stroke="#ea580c"
+        stroke="#0284c7"
         strokeWidth="2"
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M18.804 30H29.1963L24.0001 21L18.804 30Z"
-        stroke="#FDBA74"
+        stroke="#38bdf8"
         strokeWidth="2"
       />
     </svg>
@@ -92,12 +92,12 @@ function IconThree() {
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* <rect width="48" height="48" rx="8" fill="#FFEDD5" /> */}
-      <rect x="13" y="32" width="2" height="4" fill="#FDBA74" />
-      <rect x="17" y="28" width="2" height="8" fill="#FDBA74" />
-      <rect x="21" y="24" width="2" height="12" fill="#FDBA74" />
-      <rect x="25" y="20" width="2" height="16" fill="#FDBA74" />
-      <rect x="29" y="16" width="2" height="20" fill="#FB923C" />
-      <rect x="33" y="12" width="2" height="24" fill="#ea580c" />
+      <rect x="13" y="32" width="2" height="4" fill="#bae6fd" />
+      <rect x="17" y="28" width="2" height="8" fill="#bae6fd" />
+      <rect x="21" y="24" width="2" height="12" fill="#bae6fd" />
+      <rect x="25" y="20" width="2" height="16" fill="#7dd3fc" />
+      <rect x="29" y="16" width="2" height="20" fill="#38bdf8" />
+      <rect x="33" y="12" width="2" height="24" fill="#0284c7" />
     </svg>
   )
 }
@@ -154,7 +154,7 @@ const solutions = [
   // },
  
   {
-    name: 'ECommerce Strategy',
+    name: 'eCommerce Strategy',
     href: '/solutions#ecommerce-strategy',
     description: "Speak directly to your customers in a more meaningful way",
     icon: IconThree,
@@ -260,9 +260,9 @@ export default function Nav() {
                           <Link
                             key={solution.name}
                             href={solution.href}
-                            className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                            className="-m-3 p-3 flex cursor-pointer items-start rounded-lg hover:bg-gray-5000"
                           >
-                            <div>
+                            <div className="flex">
                               <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-sky-100 text-sky-600 sm:h-12 sm:w-12">
                                 <solution.icon className="h-6 w-6" aria-hidden="true" />
                               </div>
@@ -276,7 +276,7 @@ export default function Nav() {
                         ))}
                       </div>
                       <div className="p-5 bg-gray-50 sm:p-8">
-                        <Link href="/solutions" className="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
+                        <Link href="/solutions" className="-m-3 p-3 flow-root cursor-pointer rounded-md hover:bg-gray-500">
                           <div>
                             <div className="flex items-center">
                               <div className="text-base font-medium text-gray-900">See all Solutions</div>
@@ -357,9 +357,18 @@ export default function Nav() {
         </Popover.Group>
         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
          <Link href="/schedule-a-call">
-          <div className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700">
-          Get Started
+          <div>
+          <div className="ml-8 whitespace-nowrap cursor-pointer inline-flex items-center shadow-md justify-center px-4 py-2 border border-transparent rounded-md  text-base font-medium text-white bg-sky-500 hover:bg-sky-700">
+            <p>
+            Get Started 
+              </p>
+              
           </div>
+          
+
+          </div>
+         
+         
           
         </Link>
           
