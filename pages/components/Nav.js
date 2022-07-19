@@ -100,7 +100,7 @@ export default function Nav() {
       <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div className="flex justify-start  lg:w-0 lg:flex-1">
           
-            <span className="sr-only">Workflow</span>
+            <span className="sr-only">Kickbord</span>
             <Link href="/">
             <img
               className="h-8 w-auto border-2 border-black rounded-md p-1 sm:h-10"
@@ -151,9 +151,9 @@ export default function Nav() {
                           <Link
                             key={solution.name}
                             href={solution.href}
-                            className="-m-3 p-3 flex cursor-pointer items-start rounded-lg hover:bg-gray-5000"
+                            
                           >
-                            <div className="flex">
+                            <div className="-m-3 p-3 flex cursor-pointer items-start rounded-lg hover:bg-gray-100">
                               <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-sky-100 text-sky-600 sm:h-12 sm:w-12">
                                 <solution.icon className="h-6 w-6" aria-hidden="true" />
                               </div>
@@ -167,8 +167,8 @@ export default function Nav() {
                         ))}
                       </div>
                       <div className="p-5 bg-gray-50 sm:p-8">
-                        <Link href="/solutions" className="-m-3 p-3 flow-root cursor-pointer rounded-md hover:bg-gray-500">
-                          <div>
+                        <Link href="/solutions" >
+                          <div className="-m-3 p-3 flow-root cursor-pointer rounded-md hover:bg-gray-100">
                             <div className="flex items-center">
                               <div className="text-base font-medium text-gray-900">See all Solutions</div>
                               {/* <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-sky-100 text-sky-800">

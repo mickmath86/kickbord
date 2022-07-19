@@ -1,10 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { AnnotationIcon, CubeIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon, CubeTransparentIcon, ChipIcon, ArrowsExpandIcon, TrendingUpIcon, ViewGridAddIcon } from '@heroicons/react/outline'
+import { AnnotationIcon, CubeIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon, CubeTransparentIcon, ChipIcon, ArrowsExpandIcon,ArrowCircleRightIcon, TrendingUpIcon, ViewGridAddIcon } from '@heroicons/react/outline'
 
 import { useState } from 'react'
 // import BarChart from './BarChart'
 import { IconOne, IconTwo, IconThree, FacebookIcon } from '../../icons'
-
+import Link from 'next/link'
 const transferFeatures = [
   {
     id: 1,
@@ -101,10 +101,7 @@ const content = [
 ]
 
 export default function SolutionsList() {
-  // const [userData, setUserData] = useState({
-  //   labels: , 
-  //   datasets: []
-  // })
+ 
 
   return (
     
@@ -129,7 +126,24 @@ export default function SolutionsList() {
                       With experienced Facebook and Google Ads managers, you can trust that your product campaign is 
                       in good hands.
                     </p>
-                    <dl className="mt-10 space-y-10">
+                    <div className="flex space-x-5 text-sm mt-2 italic">
+                      <p>Facebook Ads</p>
+                      <p>Google Ads</p>
+                      <p>Alt Social Media</p>
+                    </div>
+                    <Link href="/schedule-a-call">
+                      
+                        <div className="flex items-center cursor-pointer group mt-6">
+                          <p className="text-sky-500 text-lg font-normal group-hover:text-sky-700 transition ease-in-out duration:300">Get Started</p>
+                          <ArrowCircleRightIcon className=" w-6 text-sky-500 ml-3 group-hover:text-sky-700 transition group-hover:transform:x-2 ease-in-out duration:300"/>
+                        </div>
+
+                   
+                     
+                    
+                      </Link>
+
+                    {/* <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
@@ -141,7 +155,7 @@ export default function SolutionsList() {
                             <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
                         </div>
                         ))}
-                    </dl>
+                    </dl> */}
                 </div>
              </div>    
            </div>
@@ -208,7 +222,7 @@ export default function SolutionsList() {
 
         {/* Section Two */}
         <div id="ecommerce-strategy" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center  xl:items-start xl:min-h-[65vh] ">
-          <div className="relative order-last">
+          <div className="relative">
             <div className="flex place-items-start">        
                 <div className="w-auto lg:w-3/4 z-20">
                       <TrendingUpIcon className="text-sky-500 h-12 w-12  mr-5"/>
@@ -220,7 +234,24 @@ export default function SolutionsList() {
                     <p className="mt-3 text-lg text-gray-500">
                     Kickbord's <span className="font-extrabold text-sky-500">M4</span> strategy is built on four fundamental pillars of eCommerce. Sending the appropriate <span className="font-extrabold text-sky-500">message</span> to the proper <span className="font-extrabold text-sky-500">market</span> at the right <span className="font-extrabold text-sky-500">moment</span> and then using leading indicators, <span className="font-extrabold text-sky-500">measuring</span> where little changes might produce large results. Combined with a deep understanding of Facebook & Google Ads, this makes for a lethal combination that will result in your product getting the attention it deserves. 
                     </p>
-                    <dl className="mt-10 space-y-10">
+                    <div className="flex space-x-5 text-sm mt-2 italic">
+                      <p>Market</p>
+                      <p>Message</p>
+                      <p>Moment</p>
+                      <p>Measure</p>
+                    </div>
+                    <Link href="/schedule-a-call">
+                      
+                        <div className="flex items-center cursor-pointer group mt-6">
+                          <p className="text-sky-500 text-lg font-normal group-hover:text-sky-700 transition ease-in-out duration:300">Get Started</p>
+                          <ArrowCircleRightIcon className=" w-6 text-sky-500 ml-3 group-hover:text-sky-700 transition group-hover:transform:x-2 ease-in-out duration:300"/>
+                        </div>
+
+                   
+                     
+                    
+                      </Link>
+                    {/* <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
@@ -232,7 +263,7 @@ export default function SolutionsList() {
                             <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
                         </div>
                         ))}
-                    </dl>
+                    </dl> */}
                 </div>
              </div>    
            </div>
@@ -281,10 +312,27 @@ export default function SolutionsList() {
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                        Conversion Rate Optimization
                     </h3>
-                    <p className="mt-3 text-lg text-gray-900">
+                    <p className="mt-3 text-lg font-bold text-sky-900">
                     Run at full efficiency at every stage of your funnel.                  </p>
                     <p className="mt-3 text-lg text-gray-500">Every stage of your funnel is an opportunity to optimize for conversions. Kickbord offers strategies to create frictionless experiences and can even help with redesigning your cart to encourage users to engage and convert without distractions.    </p>
-                    <dl className="mt-10 space-y-10">
+                    {/* <div className="flex space-x-5 text-sm mt-2 italic">
+                      <p>Market</p>
+                      <p>Message</p>
+                      <p>Moment</p>
+                      <p>Measure</p>
+                    </div> */}
+                    <Link href="/schedule-a-call">
+                      
+                        <div className="flex items-center cursor-pointer group mt-6">
+                          <p className="text-sky-500 text-lg font-normal group-hover:text-sky-700 transition ease-in-out duration:300">Get Started</p>
+                          <ArrowCircleRightIcon className=" w-6 text-sky-500 ml-3 group-hover:text-sky-700 transition group-hover:transform:x-2 ease-in-out duration:300"/>
+                        </div>
+
+                   
+                     
+                    
+                      </Link>
+                    {/* <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
@@ -296,7 +344,7 @@ export default function SolutionsList() {
                             <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
                         </div>
                         ))}
-                    </dl>
+                    </dl> */}
                 </div>
             </div>    
            </div>
@@ -335,7 +383,7 @@ export default function SolutionsList() {
 
         {/* section 4 start */}
         <div id="analytics" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
-          <div className="relative order-last">
+          <div className="relative ">
             <div className="flex place-items-start">        
                 <div className="w-auto lg:w-3/4 z-20">
                       <CubeTransparentIcon className="text-sky-500 h-12 w-12  mr-5"/>
@@ -347,7 +395,25 @@ export default function SolutionsList() {
                     <p className="mt-3 text-lg text-gray-500">
                      By tracking your brand awareness, traffic, conversion rate, and other key metrics, you'll be able to identify areas where you can improve your funnel efficiency. And when you're able to improve your funnel efficiency, you'll be able to increase your return on ad spend. So don't wait - start tracking your metrics today and see how much more efficient your funnel can be.
                     </p>
-                    <dl className="mt-10 space-y-10">
+                    <p className="mt-3 text-lg text-gray-500">Every stage of your funnel is an opportunity to optimize for conversions. Kickbord offers strategies to create frictionless experiences and can even help with redesigning your cart to encourage users to engage and convert without distractions.    </p>
+                    {/* <div className="flex space-x-5 text-sm mt-2 italic">
+                      <p>Market</p>
+                      <p>Message</p>
+                      <p>Moment</p>
+                      <p>Measure</p>
+                    </div> */}
+                    <Link href="/schedule-a-call">
+                      
+                        <div className="flex items-center cursor-pointer group mt-6">
+                          <p className="text-sky-500 text-lg font-normal group-hover:text-sky-700 transition ease-in-out duration:300">Get Started</p>
+                          <ArrowCircleRightIcon className=" w-6 text-sky-500 ml-3 group-hover:text-sky-700 transition group-hover:transform:x-2 ease-in-out duration:300"/>
+                        </div>
+
+                   
+                     
+                    
+                      </Link>
+                    {/* <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
@@ -359,7 +425,7 @@ export default function SolutionsList() {
                             <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
                         </div>
                         ))}
-                    </dl>
+                    </dl> */}
                 </div>
              </div>    
            </div>
@@ -414,7 +480,25 @@ export default function SolutionsList() {
 
 Kickboard enables you to quickly set up and get started using data-driven decision-making to improve brand performance. 
                     </p>
-                    <dl className="mt-10 space-y-10">
+                    <p className="mt-3 text-lg text-gray-500">Every stage of your funnel is an opportunity to optimize for conversions. Kickbord offers strategies to create frictionless experiences and can even help with redesigning your cart to encourage users to engage and convert without distractions.    </p>
+                    {/* <div className="flex space-x-5 text-sm mt-2 italic">
+                      <p>Market</p>
+                      <p>Message</p>
+                      <p>Moment</p>
+                      <p>Measure</p>
+                    </div> */}
+                    <Link href="/schedule-a-call">
+                      
+                        <div className="flex items-center cursor-pointer group mt-6">
+                          <p className="text-sky-500 text-lg font-normal group-hover:text-sky-700 transition ease-in-out duration:300">Get Started</p>
+                          <ArrowCircleRightIcon className=" w-6 text-sky-500 ml-3 group-hover:text-sky-700 transition group-hover:transform:x-2 ease-in-out duration:300"/>
+                        </div>
+
+                   
+                     
+                    
+                      </Link>
+                    {/* <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
@@ -426,7 +510,7 @@ Kickboard enables you to quickly set up and get started using data-driven decisi
                             <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
                         </div>
                         ))}
-                    </dl>
+                    </dl> */}
                 </div>
             </div>    
            </div>
@@ -465,7 +549,7 @@ Kickboard enables you to quickly set up and get started using data-driven decisi
 
         {/* section 6 start */}
         <div id="automations" className="relative mt-12 bg-white lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
-          <div className="relative order-last">
+          <div className="relative ">
             <div className="flex place-items-start">        
                 <div className="w-auto lg:w-3/4 z-20">
                       <LightningBoltIcon className="text-sky-500 h-12 w-12  mr-5"/>
@@ -475,15 +559,22 @@ Kickboard enables you to quickly set up and get started using data-driven decisi
                         Automations
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
-                   
-
-Want to automate your content delivery and sales process? We can make it happen. 
-
-
-
-At Kickbord, we automate everything so you don't have to lift a finger. Contact us today to see how we can help you automate your business processes.
+                             Want to automate your content delivery and sales process? We can make it happen. At Kickbord, we automate everything so you don't have to lift a finger. Contact us today to see how we can help you automate your business processes.
                     </p>
-                    <dl className="mt-10 space-y-10">
+                    <p className="mt-3 text-lg text-gray-500">Every stage of your funnel is an opportunity to optimize for conversions. Kickbord offers strategies to create frictionless experiences and can even help with redesigning your cart to encourage users to engage and convert without distractions.    </p>
+                    {/* <div className="flex space-x-5 text-sm mt-2 italic">
+                      <p>Market</p>
+                      <p>Message</p>
+                      <p>Moment</p>
+                      <p>Measure</p>
+                    </div> */}
+                    <Link href="/schedule-a-call">
+                        <div className="flex items-center cursor-pointer group mt-6">
+                          <p className="text-sky-500 text-lg font-normal group-hover:text-sky-700 transition ease-in-out duration:300">Get Started</p>
+                          <ArrowCircleRightIcon className=" w-6 text-sky-500 ml-3 group-hover:text-sky-700 transition group-hover:transform:x-2 ease-in-out duration:300"/>
+                        </div>
+                    </Link>
+                    {/* <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
@@ -495,7 +586,7 @@ At Kickbord, we automate everything so you don't have to lift a finger. Contact 
                             <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
                         </div>
                         ))}
-                    </dl>
+                    </dl> */}
                 </div>
              </div>    
            </div>
