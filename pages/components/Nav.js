@@ -265,7 +265,7 @@ export default function Nav() {
           
         </div>
       </div>
-
+{/* Mobile Nav */}
       <Transition
         as={Fragment}
         enter="duration-200 ease-out"
@@ -295,6 +295,7 @@ export default function Nav() {
               </div>
               <div className="mt-6">
                 <nav className="grid grid-cols-1 gap-7">
+                  <h1 className="text-md font-bold text-gray-600 ">Solutions</h1>
                   {solutions.map((solution) => (
                     <a
                       key={solution.name}
@@ -307,20 +308,25 @@ export default function Nav() {
                       <div className="ml-4 text-base font-medium text-gray-900">{solution.name}</div>
                     </a>
                   ))}
+                 
                 </nav>
+                
               </div>
+             
             </div>
+            
             <div className="py-6 px-5">
-              {/* <div className="grid grid-cols-2 gap-4">
+              
+              <div className="grid grid-cols-2 gap-4">
                 <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Pricing
+                  About
                 </a>
 
                 <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                   Docs
                 </a>
 
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                {/* <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                   Enterprise
                 </a>
                 {resources.map((resource) => (
@@ -331,14 +337,18 @@ export default function Nav() {
                   >
                     {resource.name}
                   </a>
-                ))}
-              </div> */}
+                ))} */}
+              </div>
               <div className="mt-6">
                 <Link
                   href="/schedule-a-call"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700"
+                 
                 >
-                  Get Started
+                  <div  className="w-full mx-auto flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700">
+                  <h3 className="bg-sky-600 mx-auto">Get Started</h3>
+                  </div>
+                  
+                  
                 </Link>
                 {/* <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
