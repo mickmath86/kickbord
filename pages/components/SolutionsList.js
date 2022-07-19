@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { AnnotationIcon, CubeIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon, CubeTransparentIcon, ChipIcon } from '@heroicons/react/outline'
+import { AnnotationIcon, CubeIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon, CubeTransparentIcon, ChipIcon, ArrowsExpandIcon, TrendingUpIcon, ViewGridAddIcon } from '@heroicons/react/outline'
 
 import { useState } from 'react'
 // import BarChart from './BarChart'
@@ -51,7 +51,7 @@ const content = [
     {
         id: 1, 
         headline: "Media Advertising", 
-        mainIcon: IconOne, 
+        mainIcon: ArrowsExpandIcon, 
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit", 
         subConent: [
             {
@@ -76,7 +76,7 @@ const content = [
     {
         id: 2, 
         headline: "Media Advertising", 
-        mainIcon: IconOne, 
+        mainIcon: TrendingUpIcon, 
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit", 
         subConent: [
             {
@@ -115,7 +115,7 @@ export default function SolutionsList() {
           <div className="relative">
             <div className="flex place-items-start">       
             <div className="w-full lg:w-3/4">
-                   <IconOne className="text-sky-500 h-24 w-24 mr-5"/>
+                   <ArrowsExpandIcon className="text-sky-500 h-24 w-24 mr-5"/>
             </div> 
                
                 <div>
@@ -211,7 +211,7 @@ export default function SolutionsList() {
           <div className="relative order-last">
             <div className="flex place-items-start">        
                  <div className="w-full lg:w-3/4">
-                   <IconThree className="text-sky-500  mr-5"/>
+                   <TrendingUpIcon className="text-sky-500  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -275,7 +275,7 @@ export default function SolutionsList() {
           <div className="relative">
             <div className="flex place-items-start">        
                 <div className="w-full lg:w-3/4">
-                   <IconTwo className="text-sky-500  mr-5"/>
+                   <ViewGridAddIcon className="text-sky-500  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">

@@ -26,7 +26,12 @@ import {
   ArrowCircleRightIcon, 
   CubeTransparentIcon, 
   LightningBoltIcon, 
-  ArrowNarrowRightIcon
+  ArrowNarrowRightIcon,
+  ArrowsExpandIcon,
+  TrendingDownIcon,
+  ViewBoardsIcon,
+  ViewGridAddIcon,
+  TrendingUpIcon
 } from '@heroicons/react/outline'
 
 
@@ -36,7 +41,7 @@ import {
       name: 'Media Advertising',
       href: '/solutions#media-advertising',
       description: 'Get a better understanding of where your traffic is coming from.',
-      icon: IconOne,
+      icon: ArrowsExpandIcon,
     },
     // {
     //   name: 'Google Advertising',
@@ -49,13 +54,13 @@ import {
       name: 'ECommerce Strategy',
       href: '#ecommerce-strategy',
       description: "Speak directly to your customers in a more meaningful way",
-      icon: IconThree,
+      icon: TrendingUpIcon,
     },
     {
       name: 'CVR Optimization',
       href: '#cvr-optimization',
       description: 'Build strategic funnels that will drive your customers to convert',
-      icon: IconTwo,
+      icon: ViewGridAddIcon,
     },
     {
       name: 'Analytics',
