@@ -172,14 +172,14 @@ function solutions() {
                     src="/images/background.jpg"
                     alt="People working on laptops"
                   />
-                  <div className="absolute inset-0 bg-green-900 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-sky-900 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-green-100">Time tested </span>
-                    <span className="block underline underline-offset-4  text-green-500">solutions</span>
+                    <span className="block text-sky-100">Time tested </span>
+                    <span className="block underline underline-offset-4  text-sky-500">solutions</span>
                   </h1>
-                  <p className="mt-6 max-w-lg mx-auto text-center text-xl text-green-200 sm:max-w-3xl">
+                  <p className="mt-6 max-w-lg mx-auto text-center text-xl text-sky-200 sm:max-w-3xl">
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
                     amet fugiat veniam occaecat fugiat aliqua.
                   </p>
@@ -197,7 +197,7 @@ function solutions() {
             <>  
                 <Link href={item.href}>
                     <div className="col-span-1 w-auto flex items-center m-2 hover:bg-gray-50 cursor-pointer rounded p-2 justify-center md:col-span-2 lg:col-span-1">
-                        <item.icon className="w-1/4 md:w-100 lg:inline xl:w-1/4 text-green-500 mr-1"/>
+                        <item.icon className="w-1/4 md:w-100 lg:inline xl:w-1/4 text-sky-500 mr-1"/>
                         <h1 className="font-bold text-sm text-gray-500" >{item.name}</h1>
                     </div>
                 </Link>

@@ -4,7 +4,7 @@ import { ExternalLinkIcon } from '@heroicons/react/solid'
 export default function HeroCta() {
   return (
     <div className="relative bg-gray-800">
-      <div className="h-56 bg-green-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+      <div className="h-56 bg-sky-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <img
           className="w-full h-full object-cover"
           src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=f97316&sat=-100&blend-mode=multiply"
