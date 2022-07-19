@@ -146,23 +146,19 @@ function classNames(...classes) {
               <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
                 On a mission to empower brands
               </h2>
+              <h3 className="text-2xl pt-6">Lets be honest, scaling a brand is <span className="underline font-bold">tough.</span> </h3>
               <div className="mt-6 text-gray-500 space-y-6">
                 <p className="text-lg">
-                  Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                  pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel
-                  porttitor vitae ut. Amet vitae fames senectus vitae.
+                There are so many moving parts and pieces, and it can be easy to quickly lose track of what's important. With all of the noise being put out by subpar ads, shifting audiences, and ever-chaning consumer desires, we understand the the struggle owners face when trying to effectively market their prodcuts on top of all the other responsibilities that fall on their shoulders. 
                 </p>
-                <p className="text-base leading-7">
-                  Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
-                  pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique
-                  eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu
-                  viverra donec ut volutpat donec laoreet quam urna.
+                <p className="text-lg ">
+                Kickbord is on a mission to provide brand owners the best marketing minds the industry has to offer so owners can go back to  doing what they do best - <span className="font-bold">running their business. </span>
                 </p>
-                <p className="text-base leading-7">
+                {/* <p className="text-base leading-7">
                   Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet
                   velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus
                   egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
-                </p>
+                </p> */}
               </div>
             </div>
   

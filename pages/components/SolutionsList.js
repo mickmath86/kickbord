@@ -8,21 +8,21 @@ import { useState } from 'react'
 const transferFeatures = [
   {
     id: 1,
-    name: 'Competitive exchange rates',
+    name: 'Message',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: GlobeAltIcon,
   },
   {
     id: 2,
-    name: 'No hidden fees',
+    name: 'Market',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: ScaleIcon,
   },
   {
     id: 3,
-    name: 'Transfers are instant',
+    name: 'Measure',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: LightningBoltIcon,
@@ -201,9 +201,11 @@ export default function SolutionsList() {
                         Media Advertising
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                        officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                        Totam, velit.
+                    Paid media advertising is where Kickbord specializes, and it will drive your product campaign to new ROI heights. 
+                     Facebook and Google Ads are two of the most effective media advertising platforms, and Kickbord
+                      will make sure that your product is getting in front of the right people, at the right time. 
+                      With experienced Facebook and Google Ads managers, you can trust that your product campaign is 
+                      in good hands.
                     </p>
                     <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
@@ -291,12 +293,10 @@ export default function SolutionsList() {
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                        eCommerce Strategy
+                        eCommerce Strategy <span className="text-orange-500 font-semibold">(M4)</span>
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                        officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                        Totam, velit.
+                    Kickbord's <span className="font-extrabold text-orange-500">M4</span> strategy is built on four fundamental pillars of eCommerce. Sending the appropriate <span className="font-extrabold text-orange-500">message</span> to the proper <span className="font-extrabold text-orange-500">market</span> at the right <span className="font-extrabold text-orange-500">moment</span> and then using leading indicators, <span className="font-extrabold text-orange-500">measuring</span> where little changes might produce large results. Combined with a deep understanding of Facebook & Google Ads, this makes for a lethal combination that will result in your product getting the attention it deserves. 
                     </p>
                     <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
@@ -359,11 +359,9 @@ export default function SolutionsList() {
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                        Conversion Rate Optimization
                     </h3>
-                    <p className="mt-3 text-lg text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                        officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                        Totam, velit.
-                    </p>
+                    <p className="mt-3 text-lg text-gray-900">
+                    Run at full efficiency at every stage of your funnel.                  </p>
+                    <p className="mt-3 text-lg text-gray-500">Every stage of your funnel is an opportunity to optimize for conversions. Kickbord offers strategies to create frictionless experiences and can even help with redesigning your cart to encourage users to engage and convert without distractions.    </p>
                     <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
@@ -425,9 +423,7 @@ export default function SolutionsList() {
                         Analytics
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                        officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                        Totam, velit.
+                     By tracking your brand awareness, traffic, conversion rate, and other key metrics, you'll be able to identify areas where you can improve your funnel efficiency. And when you're able to improve your funnel efficiency, you'll be able to increase your return on ad spend. So don't wait - start tracking your metrics today and see how much more efficient your funnel can be.
                     </p>
                     <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
@@ -490,9 +486,11 @@ export default function SolutionsList() {
                         Integrations
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                        officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                        Totam, velit.
+                    Looking to integrate Kickboard with the tools you already use? We've got you covered. Our integration abilities make it easy to connect Kickboard with the apps and systems you rely on every day.
+
+
+
+Kickboard enables you to quickly set up and get started using data-driven decision-making to improve brand performance. 
                     </p>
                     <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
@@ -555,9 +553,13 @@ export default function SolutionsList() {
                         Automations
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                        officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                        Totam, velit.
+                   
+
+Want to automate your content delivery and sales process? We can make it happen. 
+
+
+
+At Kickbord, we automate everything so you don't have to lift a finger. Contact us today to see how we can help you automate your business processes.
                     </p>
                     <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
