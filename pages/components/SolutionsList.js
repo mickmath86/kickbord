@@ -3,7 +3,7 @@ import { AnnotationIcon, CubeIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, Sc
 
 import { useState } from 'react'
 // import BarChart from './BarChart'
-import { IconOne, IconTwo, IconThree } from '../../icons'
+import { IconOne, IconTwo, IconThree, FacebookIcon } from '../../icons'
 
 const transferFeatures = [
   {
@@ -11,7 +11,7 @@ const transferFeatures = [
     name: 'Message',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: GlobeAltIcon,
+    icon: FacebookIcon,
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ const content = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit", 
         subConent: [
             {
-                 mainicon: GlobeAltIcon, 
+                 mainicon: FacebookIcon, 
                  head: "Competetive Exchange Rates", 
                  description: "Lorem Ipasdfsum"
             }, 
@@ -114,9 +114,9 @@ export default function SolutionsList() {
         <div id="media-advertising" className="relative mt-12 bg-white md:w-full lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start xl:min-h-[65vh]">
           <div className="relative">
             <div className="flex place-items-start">       
-            <div className="w-100 lg:w-3/4">
-                   <IconOne className="text-sky-500  mr-5"/>
-                </div> 
+            <div className="w-full lg:w-3/4">
+                   <IconOne className="text-sky-500 h-24 w-24 mr-5"/>
+            </div> 
                
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -224,8 +224,8 @@ export default function SolutionsList() {
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
-                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
-                                <item.icon className="h-6 w-6" aria-hidden="true" />
+                                <div className="absolute flex items-center justify-center h-23 w-12 rounded-md bg-sky-500 text-white">
+                                <item.icon className="h-12 w-12" aria-hidden="true" />
                                 </div>
                                 <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
                             </dt>
