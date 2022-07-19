@@ -22,7 +22,8 @@ import {
   TrendingUpIcon,
   QrcodeIcon, 
   SpeakerphoneIcon, 
-  ViewGridAddIcon
+  ViewGridAddIcon, 
+  ArrowsExpandIcon
 } from '@heroicons/react/outline'
 import { ChevronDownIcon,  } from '@heroicons/react/solid'
 import { IconOne, IconTwo, IconThree } from '../../icons'
@@ -34,7 +35,7 @@ const solutions = [
     name: 'Media Advertising',
     href: '/solutions#media-advertising',
     description: 'Get a better understanding of where your traffic is coming from.',
-    icon: QrcodeIcon,
+    icon: ArrowsExpandIcon,
   },
   // {
   //   name: 'Google Advertising',
@@ -333,12 +334,12 @@ export default function Nav() {
                 ))}
               </div> */}
               <div className="mt-6">
-                <a
+                <Link
                   href="/schedule-a-call"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700"
                 >
                   Get Started
-                </a>
+                </Link>
                 {/* <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
                   <a href="#" className="text-sky-600 hover:text-sky-500">
