@@ -104,7 +104,7 @@ function IconThree() {
 
 function IconFour(){
   return (
-  <svg id="way"  className="bg-orange-100 rounded-md p-2 h-12 w-12" viewBox="0 0 300 300" width="48" xmlns="http://www.w3.org/2000/svg">
+  <svg id="way"  className="bg-green-100 rounded-md p-2 h-12 w-12" viewBox="0 0 300 300" width="48" xmlns="http://www.w3.org/2000/svg">
     
     <g >
    
@@ -125,7 +125,7 @@ function IconFour(){
 
 function IconSix(){
   return (
-    <svg version="1.1" className="bg-orange-100 rounded-md p-2 h-12 w-12" id="way2" xmlns="http://www.w3.org/2000/svg">
+    <svg version="1.1" className="bg-green-100 rounded-md p-2 h-12 w-12" id="way2" xmlns="http://www.w3.org/2000/svg">
 
       <path fill="#FB923C"  d="M213.3,85.3c70.7,0,128,57.3,128,128h34.1c0-89.5-72.6-162.1-162.1-162.1c-89.6,0-162.1,72.6-162.1,162.1
         c0,89.6,72.6,162.1,162.1,162.1H266l-27,27.1l24.1,24.1l56.2-56.2c6.7-6.7,6.7-17.5,0-24.1l-56.2-56.2l-24.1,24.1l26.9,26.8v0.2
@@ -219,7 +219,7 @@ export default function Nav() {
           </Link>
         </div>
         <div className="-mr-2 -my-2 md:hidden">
-          <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500">
+          <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
             <span className="sr-only">Open menu</span>
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </Popover.Button>
@@ -231,7 +231,7 @@ export default function Nav() {
                 <Popover.Button
                   className={classNames(
                     open ? 'text-gray-900' : 'text-gray-500',
-                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500'
+                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
                   )}
                 >
                   <span>Solutions</span>
@@ -263,7 +263,7 @@ export default function Nav() {
                             className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                           >
                             <div>
-                              <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-orange-100 text-orange-600 sm:h-12 sm:w-12">
+                              <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-green-100 text-green-600 sm:h-12 sm:w-12">
                                 <solution.icon className="h-6 w-6" aria-hidden="true" />
                               </div>
                               <div className="ml-4">
@@ -280,7 +280,7 @@ export default function Nav() {
                           <div>
                             <div className="flex items-center">
                               <div className="text-base font-medium text-gray-900">See all Solutions</div>
-                              {/* <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-orange-100 text-orange-800">
+                              {/* <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-green-100 text-green-800">
                                 New
                               </span> */}
                             </div>
@@ -312,7 +312,7 @@ export default function Nav() {
                 <Popover.Button
                   className={classNames(
                     open ? 'text-gray-900' : 'text-gray-500',
-                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500'
+                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
                   )}
                 >
                   <span>More</span>
@@ -357,7 +357,7 @@ export default function Nav() {
         </Popover.Group>
         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
          <Link href="/schedule-a-call">
-          <div className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-orange-600 hover:bg-orange-700">
+          <div className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700">
           Get Started
           </div>
           
@@ -387,7 +387,7 @@ export default function Nav() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
                     <span className="sr-only">Close menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -401,7 +401,7 @@ export default function Nav() {
                       href={solution.href}
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
-                      <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-orange-100 text-orange-500">
+                      <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-green-100 text-green-500">
                           <solution.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <div className="ml-4 text-base font-medium text-gray-900">{solution.name}</div>
@@ -436,13 +436,13 @@ export default function Nav() {
               <div className="mt-6">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-orange-600 hover:bg-orange-700"
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700"
                 >
                   Sign up
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-orange-600 hover:text-orange-500">
+                  <a href="#" className="text-green-600 hover:text-green-500">
                     Sign in
                   </a>
                 </p>

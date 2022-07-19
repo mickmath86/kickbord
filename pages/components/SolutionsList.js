@@ -193,7 +193,7 @@ export default function SolutionsList() {
           <div className="relative">
             <div className="flex place-items-start">       
             <div className="w-100 lg:w-3/4">
-                   <IconOne className="text-orange-500  mr-5"/>
+                   <IconOne className="text-green-500  mr-5"/>
                 </div> 
                
                 <div>
@@ -211,7 +211,7 @@ export default function SolutionsList() {
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
-                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
                                 <item.icon className="h-6 w-6" aria-hidden="true" />
                                 </div>
                                 <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
@@ -289,20 +289,20 @@ export default function SolutionsList() {
           <div className="relative order-last">
             <div className="flex place-items-start">        
                  <div className="w-100 lg:w-3/4">
-                   <IconThree className="text-orange-500  mr-5"/>
+                   <IconThree className="text-green-500  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                        eCommerce Strategy <span className="text-orange-500 font-semibold">(M4)</span>
+                        eCommerce Strategy <span className="text-green-500 font-semibold">(M4)</span>
                     </h3>
                     <p className="mt-3 text-lg text-gray-500">
-                    Kickbord's <span className="font-extrabold text-orange-500">M4</span> strategy is built on four fundamental pillars of eCommerce. Sending the appropriate <span className="font-extrabold text-orange-500">message</span> to the proper <span className="font-extrabold text-orange-500">market</span> at the right <span className="font-extrabold text-orange-500">moment</span> and then using leading indicators, <span className="font-extrabold text-orange-500">measuring</span> where little changes might produce large results. Combined with a deep understanding of Facebook & Google Ads, this makes for a lethal combination that will result in your product getting the attention it deserves. 
+                    Kickbord's <span className="font-extrabold text-green-500">M4</span> strategy is built on four fundamental pillars of eCommerce. Sending the appropriate <span className="font-extrabold text-green-500">message</span> to the proper <span className="font-extrabold text-green-500">market</span> at the right <span className="font-extrabold text-green-500">moment</span> and then using leading indicators, <span className="font-extrabold text-green-500">measuring</span> where little changes might produce large results. Combined with a deep understanding of Facebook & Google Ads, this makes for a lethal combination that will result in your product getting the attention it deserves. 
                     </p>
                     <dl className="mt-10 space-y-10">
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
-                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
                                 <item.icon className="h-6 w-6" aria-hidden="true" />
                                 </div>
                                 <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
@@ -353,7 +353,7 @@ export default function SolutionsList() {
           <div className="relative">
             <div className="flex place-items-start">        
                 <div className="w-100 lg:w-3/4">
-                   <IconTwo className="text-orange-500  mr-5"/>
+                   <IconTwo className="text-green-500  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -366,7 +366,7 @@ export default function SolutionsList() {
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
-                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
                                 <item.icon className="h-6 w-6" aria-hidden="true" />
                                 </div>
                                 <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
@@ -416,7 +416,7 @@ export default function SolutionsList() {
           <div className="relative order-last">
             <div className="flex place-items-start">        
                  <div className="w-3/4 md:w-1/4 lg:w-3/4">
-                   <CubeTransparentIcon className="text-orange-500  mr-5"/>
+                   <CubeTransparentIcon className="text-green-500  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -429,7 +429,7 @@ export default function SolutionsList() {
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
-                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
                                 <item.icon className="h-6 w-6" aria-hidden="true" />
                                 </div>
                                 <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
@@ -479,7 +479,7 @@ export default function SolutionsList() {
           <div className="relative">
             <div className="flex place-items-start">        
                   <div className="w-3/4 md:w-1/4 lg:w-3/4">
-                    <ChipIcon className="text-orange-500  mr-5"/>
+                    <ChipIcon className="text-green-500  mr-5"/>
                   </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -496,7 +496,7 @@ Kickboard enables you to quickly set up and get started using data-driven decisi
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
-                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
                                 <item.icon className="h-6 w-6" aria-hidden="true" />
                                 </div>
                                 <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
@@ -546,7 +546,7 @@ Kickboard enables you to quickly set up and get started using data-driven decisi
           <div className="relative order-last">
             <div className="flex place-items-start">        
                  <div className="w-3/4 md:w-1/4 lg:w-3/4">
-                   <LightningBoltIcon className="text-orange-500  mr-5"/>
+                   <LightningBoltIcon className="text-green-500  mr-5"/>
                 </div> 
                 <div>
                     <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
@@ -565,7 +565,7 @@ At Kickbord, we automate everything so you don't have to lift a finger. Contact 
                         {transferFeatures.map((item) => (
                         <div key={item.id} className="relative">
                             <dt>
-                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
                                 <item.icon className="h-6 w-6" aria-hidden="true" />
                                 </div>
                                 <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>

@@ -104,7 +104,7 @@ function IconThree() {
 
 function IconFour(){
   return (
-  <svg id="way"  className="bg-orange-100 rounded-md p-2 h-12 w-12" viewBox="0 0 300 300" width="48" xmlns="http://www.w3.org/2000/svg">
+  <svg id="way"  className="bg-green-100 rounded-md p-2 h-12 w-12" viewBox="0 0 300 300" width="48" xmlns="http://www.w3.org/2000/svg">
     
     <g >
    
@@ -125,7 +125,7 @@ function IconFour(){
 
 function IconSix(){
   return (
-    <svg version="1.1" className="bg-orange-100 rounded-md p-2 h-12 w-12" id="way2" xmlns="http://www.w3.org/2000/svg">
+    <svg version="1.1" className="bg-green-100 rounded-md p-2 h-12 w-12" id="way2" xmlns="http://www.w3.org/2000/svg">
 
       <path fill="#FB923C"  d="M213.3,85.3c70.7,0,128,57.3,128,128h34.1c0-89.5-72.6-162.1-162.1-162.1c-89.6,0-162.1,72.6-162.1,162.1
         c0,89.6,72.6,162.1,162.1,162.1H266l-27,27.1l24.1,24.1l56.2-56.2c6.7-6.7,6.7-17.5,0-24.1l-56.2-56.2l-24.1,24.1l26.9,26.8v0.2

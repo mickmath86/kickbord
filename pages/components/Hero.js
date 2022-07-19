@@ -43,14 +43,14 @@ export default function Hero() {
                     src="/images/background.jpg"
                     alt="People working on laptops"
                   />
-                  <div className="absolute inset-0 bg-orange-900 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-green-900 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-orange-100">Take control of your</span>
-                    <span className="block  text-orange-500">online brand</span>
+                    <span className="block text-green-100">Take control of your</span>
+                    <span className="block  text-green-500">online brand</span>
                   </h1>
-                  <p className="mt-6 max-w-lg mx-auto text-center text-xl text-orange-200 sm:max-w-3xl">
+                  <p className="mt-6 max-w-lg mx-auto text-center text-xl text-green-200 sm:max-w-3xl">
                   Kickbord helps brands scale their online businesses by giving owners the tools they need to take control of their eCommerce brand and maximize return on ad spend.                   </p>
                   <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
@@ -62,7 +62,7 @@ export default function Hero() {
                       </a>
                       <a
                         href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-500  hover:bg-opacity-70 sm:px-8"
+                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-500  hover:bg-opacity-70 sm:px-8"
                       >
                        Contact
                       </a>

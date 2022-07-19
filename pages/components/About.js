@@ -104,8 +104,8 @@ function classNames(...classes) {
                   src="/images/shipping.jpg"
                   alt=""
                 />
-                <div className="absolute inset-0 bg-orange-500 mix-blend-multiply" />
-                <div className="absolute inset-0 bg-gradient-to-t from-orange-600 via-orange-600 opacity-90" />
+                <div className="absolute inset-0 bg-green-500 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-600 via-green-600 opacity-90" />
                 <div className="relative px-8">
                   <div>
                     <img
@@ -117,7 +117,7 @@ function classNames(...classes) {
                   <blockquote className="mt-8">
                     <div className="relative text-lg font-medium text-white md:flex-grow">
                       <svg
-                        className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-orange-400"
+                        className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-green-400"
                         fill="currentColor"
                         viewBox="0 0 32 32"
                         aria-hidden="true"
@@ -131,7 +131,7 @@ function classNames(...classes) {
                     </div>
   
                     <footer className="mt-4">
-                      <p className="text-base font-semibold text-orange-200">Sarah Williams, CEO at Workcation</p>
+                      <p className="text-base font-semibold text-green-200">Sarah Williams, CEO at Workcation</p>
                     </footer>
                   </blockquote>
                 </div>
@@ -167,7 +167,7 @@ function classNames(...classes) {
               {/* 
                */}
               <div className="mt-10">
-                <a href="#" className="text-base font-medium text-orange-600">
+                <a href="#" className="text-base font-medium text-green-600">
                   {' '}
                   Learn more about how we are changing the world <span aria-hidden="true">&rarr;</span>{' '}
                 </a>
