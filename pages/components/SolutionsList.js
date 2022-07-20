@@ -137,8 +137,8 @@ export default function SolutionsList() {
       <div className="relative grid bg-white mx-auto  ">
         {/* Section Start */}
         {content.map((item) => 
-        <div key={item.id} className="w-full odd:bg-white even:bg-gray-900 flex items-center ">
-          <div  id={item.idLabel} className="relative mx-auto pt-12 pb-24 max-w-md md:max-w-xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
+        <div key={item.id} className="w-full odd:bg-white even:bg-gray-900 flex items-center mx-auto">
+          <div  id={item.idLabel} className="relative flex mx-auto pt-12 pb-24 max-w-md md:max-w-xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
           
         
           <div className="relative ">
@@ -177,7 +177,7 @@ export default function SolutionsList() {
            </div>
  
           {/* Image */}
-          <div className="mt-10 -mx-4 w-full rounded-md relative lg:mt-0" aria-hidden="true">
+          <div className="mt-10 -mx-4 w-full justify-center rounded-md relative lg:mt-0" aria-hidden="true">
           
             <img
                 className="relative mx-auto rounded-xl w-2/3 md:w-1/2 drop-shadow-lg shadow-lg"
