@@ -45,6 +45,12 @@ const communicationFeatures = [
   },
 ]
 
+function Blue(text){
+return (
+  <span className="font-bold text-sky-500">{text}</span>
+)
+}
+
 
 
 const content = [
@@ -64,13 +70,14 @@ const content = [
     {
       id: 2, 
       idLabel: "ecommerce-strategy", 
-      headline: "eCommerce Strategy", 
+      headline: `eCommerce Strategy `,
+      tag: '(M4)',
       mainIcon: TrendingUpIcon, 
-      description: " Kickbord's"  +"strategy is built on four fundamental pillars of eCommerce. Sending the appropriate message to the proper market at the right moment and then using leading indicators, measuring where little changes might produce large results. Combined with a deep understanding of Facebook & Google Ads, this makes for a lethal combination that will result in your product getting the attention it deserves. ", 
+      description: `Kickbord's strategy is built on four fundamental pillars of eCommerce. Sending the appropriate message to the proper market at the right moment and then using leading indicators, measuring where little changes might produce large results. Combined with a deep understanding of Facebook & Google Ads, this makes for a lethal combination that will result in your product getting the attention it deserves. `, 
       subConent: ["Market", "Message", "Moment", "Measure"], 
       linkText: "Get Started", 
       getStartedUrl: "/schedule-a-call", 
-      image: "/images/media.png"
+      image: "/images/UI/M4.png"
 
     },
     {
@@ -80,7 +87,7 @@ const content = [
       mainIcon: ViewGridAddIcon, 
       subHeadline: "Run at full efficiency at every stage of your funnel.", 
       description: " Every stage of your funnel is an opportunity to optimize for conversions. Kickbord offers strategies to create frictionless experiences and can even help with redesigning your cart to encourage users to engage and convert without distractions.", 
-      subConent: [], 
+      subConent: ["Cart Redesign"], 
       linkText: "Get Started", 
       getStartedUrl: "/schedule-a-call", 
       image: "/images/media.png"
@@ -149,7 +156,7 @@ export default function SolutionsList() {
                
                <div className="flex-row justify-items-start">
                    <h3 className="text-2xl z-100 font-extrabold odd:text-gray-800 even:text-white tracking-tight sm:text-3xl md:text-5xl xl:text-6xl">
-                       {item.headline}
+                       {item.headline} <span className="font-bold text-sky-500">{item.tag}</span>   
                    </h3>
                    <p className="mt-3 text-lg font-bold text-sky-900 xl:text-lg">
                      {item.subHeadline}      
@@ -177,7 +184,7 @@ export default function SolutionsList() {
            </div>
  
           {/* Image */}
-          <div className="my-10 -mx-4 w-full  items-center justify-center rounded-md relative lg:mt-0" aria-hidden="true">
+          <div className="my-10 -mx-2 w-full  items-center justify-center rounded-md relative lg:mt-0" aria-hidden="true">
           
             <img
                 className="relative mx-auto rounded-xl w-full  "
