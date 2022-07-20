@@ -137,8 +137,8 @@ export default function SolutionsList() {
       <div className="relative grid bg-white mx-auto  ">
         {/* Section Start */}
         {content.map((item) => 
-        <div key={item.id} className="w-full odd:bg-white even:bg-gray-200 flex items-center mx-auto">
-          <div  id={item.idLabel} className="relative flex-col  mx-auto pt-12 pb-24 px-4 max-w-md md:max-w-xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
+        <div key={item.id}  id={item.idLabel} className="w-full pt-12 odd:bg-white even:bg-gray-50 flex items-center mx-auto">
+          <div   data-aos="fade-up" className="relative flex-col  mx-auto  pb-24 px-4 max-w-md sm:max-w-3xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
           
         
           <div className="relative ">
@@ -165,7 +165,7 @@ export default function SolutionsList() {
                    <Link href={item.getStartedUrl}>
        
                      <div className="flex items-center cursor-pointer group mt-6">
-                       <p className="text-sky-500 text-lg font-bold xl:text-2xl xl:font-light group-hover:text-sky-700 transition ease-in-out duration:300">{item.linkText}</p>
+                       <p className="text-sky-500 text-base font-bold xl:text-xl xl:font-light group-hover:text-sky-700 transition ease-in-out duration:300">{item.linkText}</p>
                        <ArrowCircleRightIcon className=" w-6 text-sky-500 ml-3 group-hover:text-sky-700 transition group-hover:transform:x-2 ease-in-out duration:300"/>
                      </div>
  
