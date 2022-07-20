@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 import { Popover, Transition } from '@headlessui/react'
 
-import styles from '../styles/Home.module.css'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Logos from './components/Logos'
