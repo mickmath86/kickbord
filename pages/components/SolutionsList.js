@@ -129,7 +129,7 @@ const content = [
       subConent: [], 
       linkText: "Get Started", 
       getStartedUrl: "/schedule-a-call", 
-      image: "/images/media.png"
+      image: "/images/UI/automations.png"
 
     },   
    
