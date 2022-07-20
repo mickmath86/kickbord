@@ -156,7 +156,7 @@ export default function SolutionsList() {
                   </p>
                   <div className="flex space-x-5 text-sm mt-6 italic xl:text-xl">
                       {item.subConent.map(snap => 
-                        <p>{snap}</p>
+                        <p key={snap}>{snap}</p>
                       )}
                   </div>
                   <Link href={item.getStartedUrl}>
