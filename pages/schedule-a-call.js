@@ -4,7 +4,8 @@ import Link from 'next/link'
 import Script from 'next/script'
 import Nav from './components/SimpleNav'
 import Typeform from './components/Typeform'
-import { InlineWidget, PopupButton } from "react-calendly";
+import Calendly from './components/Calendly'
+import Footer from './components/Footer'
 
 
 
@@ -22,14 +23,17 @@ export default function scheduleACall() {
           <h1 className="max-w-4xl  mx-auto text-center text-7xl">Book a free 30 minute discovery call</h1>
           {/* <Link href="/conversion"><button className="bg-blue-500 px-4 py-2">Conversion</button></Link> */}
       </div>
-      <InlineWidget className="overflow-hidden" url="https://calendly.com/kickbord/30min" />
+      {/* <div className="h-auto">
+        <Calendly />
+      </div> */}
+      
       
      
 
-      <div className="max-w-5xl mx-auto h-[50vh] lg:h-[75vh]">
+      <div className="max-w-5xl mx-auto h-[100vh] lg:h-[75vh]">
         <Typeform />
       </div>
-     
+     <Footer />
     
     </>
    
