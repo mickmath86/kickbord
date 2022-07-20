@@ -137,8 +137,8 @@ export default function SolutionsList() {
       <div className="relative grid bg-white mx-auto  ">
         {/* Section Start */}
         {content.map((item) => 
-        <div key={item.id} className="w-full odd:bg-white even:bg-gray-900 flex items-center mx-auto">
-          <div  id={item.idLabel} className="relative flex-col  mx-auto pt-12 pb-24 max-w-sm md:max-w-xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
+        <div key={item.id} className="w-full odd:bg-white even:bg-gray-200 flex items-center mx-auto">
+          <div  id={item.idLabel} className="relative flex-col  mx-auto pt-12 pb-24 max-w-md md:max-w-xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
           
         
           <div className="relative ">
@@ -148,13 +148,13 @@ export default function SolutionsList() {
                </div> 
                
                <div className="flex-row justify-items-start">
-                   <h3 className="text-2xl z-100 font-extrabold text-gray-900 tracking-tight sm:text-3xl md:text-5xl xl:text-6xl">
+                   <h3 className="text-2xl z-100 font-extrabold odd:text-gray-800 even:text-white tracking-tight sm:text-3xl md:text-5xl xl:text-6xl">
                        {item.headline}
                    </h3>
                    <p className="mt-3 text-lg font-bold text-sky-900 xl:text-lg">
                      {item.subHeadline}      
                    </p>
-                   <p className="mt-3 text-lg text-gray-500 xl:text-2xl xl:font-light">
+                   <p className="mt-3 text-lg text-gray-700 xl:text-2xl xl:font-light">
                      {item.description}
                    </p>
                    <div className="flex space-x-5 text-sm mt-6 italic xl:text-xl">
