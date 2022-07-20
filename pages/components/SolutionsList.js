@@ -58,7 +58,7 @@ const content = [
         subConent: ["Facebook Ads", "Google Ads"], 
         linkText: "Get Started", 
         getStartedUrl: "/schedule-a-call", 
-        image: "/images/media.png"
+        image: "/images/UI/ga-fb.png"
 
     }, 
     {
@@ -177,15 +177,17 @@ export default function SolutionsList() {
            </div>
  
           {/* Image */}
-          <div className="mt-10 -mx-4 w-full justify-center rounded-md relative lg:mt-0" aria-hidden="true">
+          <div className="my-10 -mx-4 w-full  items-center justify-center rounded-md relative lg:mt-0" aria-hidden="true">
           
             <img
-                className="relative mx-auto rounded-xl w-2/3 md:w-1/2 drop-shadow-lg shadow-lg"
+                className="relative mx-auto rounded-xl w-2/3 md:w-1/2 lg:w-full "
                 
                 src={item.image}
                 alt=""
             />
+            
             </div>
+
           
           
           
