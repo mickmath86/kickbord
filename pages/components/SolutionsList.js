@@ -138,7 +138,7 @@ export default function SolutionsList() {
         {/* Section Start */}
         {content.map((item) => 
         <div key={item.id} className="w-full odd:bg-white even:bg-gray-900 flex items-center mx-auto">
-          <div  id={item.idLabel} className="relative flex mx-auto pt-12 pb-24 max-w-md md:max-w-xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
+          <div  id={item.idLabel} className="relative flex-col  mx-auto pt-12 pb-24 max-w-sm md:max-w-xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
           
         
           <div className="relative ">
