@@ -188,8 +188,8 @@ export default function Nav() {
             )}
           </Popover>
 
-          <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            Pricing
+          <a href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            About
           </a>
           <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
             Docs
