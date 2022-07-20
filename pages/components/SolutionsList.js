@@ -137,8 +137,8 @@ export default function SolutionsList() {
       <div className="relative grid bg-white mx-auto  ">
         {/* Section Start */}
         {content.map((item) => 
-        <div className="w-full odd:bg-white even:bg-gray-900 flex items-center ">
-          <div key={item.id} id={item.idLabel} className="relative mx-auto pt-12 pb-24 max-w-7xl md:w-full lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
+        <div key={item.id} className="w-full odd:bg-white even:bg-gray-900 flex items-center ">
+          <div  id={item.idLabel} className="relative mx-auto pt-12 pb-24 max-w-7xl md:w-full lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
           
         
           <div className="relative ">

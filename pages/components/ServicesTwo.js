@@ -95,8 +95,8 @@ function ServicesTwo() {
         </div>
         <div className="container mx-auto max-w-6xl flex-col bg-grey-100">
             {solutions.map((item) => (
-              <Link href={item.href}>
-              <div key={item.id} className=" flex text-sky-200 cursor-pointer rounded-md items-center p-6 group hover:bg-gray-800 backdrop-blur-m transition ease-in-out duration-200">
+              <Link key={item.id} href={item.href}>
+              <div  className=" flex text-sky-200 cursor-pointer rounded-md items-center p-6 group hover:bg-gray-800 backdrop-blur-m transition ease-in-out duration-200">
                     <div className="min-w-32">
                         <div className="h-16 w-16 lg:h-32 lg:w-32 bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-white ease-in-out duration-300">
                             <item.icon className="h-10 w-10 lg:h-20 lg:w-20 text-sky-600 ease-in-out duration-300"/>
@@ -125,7 +125,7 @@ function ServicesTwo() {
 
                     </div>
                    
-                </div>
+              </div>
               </Link>
                 
                 
