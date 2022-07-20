@@ -138,7 +138,7 @@ export default function SolutionsList() {
         {/* Section Start */}
         {content.map((item) => 
         <div key={item.id}  id={item.idLabel} className="w-full pt-12 odd:bg-white even:bg-gray-50 flex items-center mx-auto">
-          <div   data-aos="fade-up" className="relative flex-col  mx-auto  pb-24 px-4 max-w-md sm:max-w-3xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
+          <div   data-aos="fade-up" className="relative flex-col  mx-auto  pb-24 px-4 max-w-2xl sm:max-w-3xl lg:max-w-7xl  lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center xl:items-start ">
           
         
           <div className="relative ">
@@ -180,7 +180,7 @@ export default function SolutionsList() {
           <div className="my-10 -mx-4 w-full  items-center justify-center rounded-md relative lg:mt-0" aria-hidden="true">
           
             <img
-                className="relative mx-auto rounded-xl w-2/3 md:w-1/2 lg:w-full "
+                className="relative mx-auto rounded-xl w-full  "
                 
                 src={item.image}
                 alt=""
