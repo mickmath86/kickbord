@@ -90,7 +90,7 @@ const content = [
       subConent: ["Cart Redesign"], 
       linkText: "Get Started", 
       getStartedUrl: "/schedule-a-call", 
-      image: "/images/media.png"
+      image: "/images/UI/cvr.png"
 
     },  
     {
