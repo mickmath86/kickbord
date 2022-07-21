@@ -23,7 +23,8 @@ import {
   QrcodeIcon, 
   SpeakerphoneIcon, 
   ViewGridAddIcon, 
-  ArrowsExpandIcon
+  ArrowsExpandIcon, 
+  MailOpenIcon
 } from '@heroicons/react/outline'
 import { ChevronDownIcon,  } from '@heroicons/react/solid'
 import { IconOne, IconTwo, IconThree } from '../../icons'
@@ -51,6 +52,12 @@ const solutions = [
     icon: TrendingUpIcon,
   },
   {
+    name: 'Email Marketing',
+    href: '/solutions#email-marketing',
+    description: "Connect with third-party tools that youre already using.",
+    icon: MailOpenIcon,
+  },
+  {
     name: 'Conversion Rate Optimization',
     href: '/solutions#cvr-optimization',
     description: 'Build strategic funnels that will drive your customers to convert',
@@ -63,12 +70,7 @@ const solutions = [
     icon: CubeTransparentIcon,
 
   },
-  {
-    name: 'Integrations',
-    href: '/solutions#integrations',
-    description: "Connect with third-party tools that youre already using.",
-    icon: ChipIcon,
-  },
+ 
   {
     name: 'Automations',
     href: '/solutions#automations',

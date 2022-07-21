@@ -32,7 +32,8 @@ import {
   TrendingDownIcon,
   ViewBoardsIcon,
   ViewGridAddIcon,
-  TrendingUpIcon
+  TrendingUpIcon, 
+  MailOpenIcon
 } from '@heroicons/react/outline'
 
 
@@ -58,6 +59,12 @@ import {
       icon: TrendingUpIcon,
     },
     {
+      name: 'Email Marketing',
+      href: '#email-marketing',
+      description: "Connect with third-party tools that youre already using.",
+      icon: MailOpenIcon,
+    },
+    {
       name: 'CVR Optimization',
       href: '#cvr-optimization',
       description: 'Build strategic funnels that will drive your customers to convert',
@@ -70,12 +77,7 @@ import {
       icon: CubeTransparentIcon,
   
     },
-    {
-      name: 'Integrations',
-      href: '#integrations',
-      description: "Connect with third-party tools that youre already using.",
-      icon: ChipIcon,
-    },
+   
     {
       name: 'Automations',
       href: '#automations',

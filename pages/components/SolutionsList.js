@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { AnnotationIcon, CubeIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon, CubeTransparentIcon, ChipIcon, ArrowsExpandIcon,ArrowCircleRightIcon, TrendingUpIcon, ViewGridAddIcon } from '@heroicons/react/outline'
+import { AnnotationIcon, CubeIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon, CubeTransparentIcon, ChipIcon, ArrowsExpandIcon,ArrowCircleRightIcon, TrendingUpIcon, ViewGridAddIcon, MailOpenIcon } from '@heroicons/react/outline'
 
 import { useState } from 'react'
 // import BarChart from './BarChart'
@@ -82,6 +82,19 @@ const content = [
     },
     {
       id: 3, 
+      idLabel: "email-marketing", 
+      headline: "Email Marketing", 
+      mainIcon: MailOpenIcon, 
+      subHeadline: "", 
+      description: "Looking to integrate Kickboard with the tools you already use? We've got you covered. Our integration abilities make it easy to connect Kickboard with the apps and systems you rely on every day. Kickboard enables you to quickly set up and get started using data-driven decision-making to improve brand performance.", 
+      subConent: [], 
+      linkText: "Get Started", 
+      getStartedUrl: "/schedule-a-call", 
+      image: "/images/UI/email.png"
+
+    },   
+    {
+      id: 4, 
       idLabel: "cvr-optimization", 
       headline: "Conversion Rate Optimization", 
       mainIcon: ViewGridAddIcon, 
@@ -94,7 +107,7 @@ const content = [
 
     },  
     {
-      id: 4, 
+      id: 5, 
       idLabel: "analytics", 
       headline: "Analytics", 
       mainIcon: CubeTransparentIcon, 
@@ -103,22 +116,10 @@ const content = [
       subConent: [], 
       linkText: "Get Started", 
       getStartedUrl: "/schedule-a-call", 
-      image: "/images/media.png"
+      image: "/images/UI/charts.png"
 
     }, 
-    {
-      id: 5, 
-      idLabel: "integrations", 
-      headline: "Integrations", 
-      mainIcon: ChipIcon, 
-      subHeadline: "", 
-      description: "Looking to integrate Kickboard with the tools you already use? We've got you covered. Our integration abilities make it easy to connect Kickboard with the apps and systems you rely on every day. Kickboard enables you to quickly set up and get started using data-driven decision-making to improve brand performance.", 
-      subConent: [], 
-      linkText: "Get Started", 
-      getStartedUrl: "/schedule-a-call", 
-      image: "/images/media.png"
-
-    },   
+   
     {
       id: 6, 
       idLabel: "automations", 
@@ -151,7 +152,7 @@ export default function SolutionsList() {
           <div className="relative ">
             <div className="flex relative place-items-start">       
                <div className="w-auto lg:w-3/4 z-20">
-                       <item.mainIcon className="text-sky-500 h-12 w-12  mr-5 xl:w-24 xl:h-24"/>
+                       <item.mainIcon className="text-sky-500 h-12 w-12  mr-5 xl:w-16 xl:h-16 font-thin"/>
                </div> 
                
                <div className="flex-row justify-items-start">
