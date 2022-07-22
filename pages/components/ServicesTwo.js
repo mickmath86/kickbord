@@ -87,13 +87,13 @@ function ServicesTwo() {
     <div className="min-h-screen bg-gray-900 py-24">
         <div className="mx-auto text-center">
             <h2 className="text-base font-semibold uppercase tracking-wider text-sky-600">Grow Faster</h2>
-            <p className="mt-2 text-3xl font-extrabold tracking-tight text-sky-100 sm:text-4xl">
+            <p className="mt-2 mb-24 text-3xl px-8 font-extrabold tracking-tight text-sky-100 sm:text-4xl">
                 Everything you need to scale your brand
             </p>
-            <p className="mx-auto my-5 px-5 max-w-prose text-xl text-gray-400">
+            {/* <p className="mx-auto my-5 px-5 max-w-prose text-xl text-gray-400">
                 Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
                 malesuada. Eleifend condimentum id viverra nulla.
-            </p>
+            </p> */}
         </div>
         <div className="container mx-auto max-w-6xl flex-col bg-grey-100">
             {solutions.map((item) => (

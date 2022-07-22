@@ -36,30 +36,37 @@ export default function Hero() {
           {/* Hero card */}
           <div className="relative">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-              <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+            <div className="mx-auto ">
+              <div className="relative mx-auto shadow-xl  sm:overflow-hidden">
                 <div className="absolute inset-0">
                   <img
                     className="h-full w-full object-cover"
                     src="/images/background.jpg"
                     alt="People working on laptops"
                   />
-                  <div className="absolute inset-0 bg-sky-900 mix-blend-multiply" />
+                  <div className="absolute mx-auto inset-0 bg-sky-900 mix-blend-multiply" />
                 </div>
-                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                  <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                <div className="relative flex-col px-4 mx-auto py-8 sm:px-6 sm:py-24 lg:py-8 lg:px-8">
+                 
+                  <img className="mx-auto" src="/images/UI/headline.png" alt="" />
+                  {/* <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                   
                     <span className="block text-sky-400">Take control of your</span>
                     <span className="block  text-white">online brand</span>
-                  </h1>
-                  <p className="mt-6 max-w-lg mx-auto text-center text-xl text-gray-200 sm:max-w-3xl">
-                  Kickbord helps brands scale their online businesses by giving owners the tools they need to take control of their eCommerce brand and maximize return on ad spend.                   </p>
+                  </h1> */}
+                  <p className="mt-2 max-w-lg mx-auto text-center text-xl text-gray-200 sm:max-w-3xl">
+                       Kickbord helps brands scale their online businesses by giving owners the tools they need to take control of their eCommerce brand and maximize return on ad spend.                 
+                  </p>
+
+                  
+                
                   <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                     <div className=" mx-auto">
                       <Link
                         href="/schedule-a-call"
                         
                       >
-                        <div className="flex cursor-pointer items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
+                        <div className="flex mb-4 cursor-pointer items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
                           Schedule a call
                         </div>
                        

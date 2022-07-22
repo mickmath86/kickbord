@@ -81,14 +81,10 @@ const solutions = [
   
 ]
 const resources = [
-  {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
-  },
-  { name: 'Guides', description: 'Learn how to maximize our platform to get the most out of it.', href: '#' },
-  { name: 'Events', description: 'See what meet-ups and other events we might be planning near you.', href: '#' },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#' },
+  
+  { name: 'Purpose', description: 'Learn how to maximize our platform to get the most out of it.', href: '/about#purpose' },
+  { name: 'Beliefs', description: 'See what meet-ups and other events we might be planning near you.', href: '/about#belief' },
+  { name: 'Background', description: 'Understand how we take your privacy seriously.', href: '/about#background' },
 ]
 
 
@@ -203,7 +199,7 @@ export default function Nav() {
 
         {/* MORE Nav Drop down */}
         
-          {/* <Popover className="relative">
+          <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
@@ -241,7 +237,7 @@ export default function Nav() {
                             className="-m-3 p-3 block rounded-md hover:bg-gray-50"
                           >
                             <p className="text-base font-medium text-gray-900">{resource.name}</p>
-                            <p className="mt-1 text-sm text-gray-500">{resource.description}</p>
+                            {/* <p className="mt-1 text-sm text-gray-500">{resource.description}</p> */}
                           </a>
                         ))}
                       </div>
@@ -250,7 +246,7 @@ export default function Nav() {
                 </Transition>
               </>
             )}
-          </Popover> */}
+          </Popover>
         </Popover.Group>
         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
          <Link href="/schedule-a-call">
@@ -334,13 +330,13 @@ export default function Nav() {
                   
                 </Link>
 
-                {/* <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docs
-                </a> */}
+                 {/* <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  Purpose
+                </a> 
 
-                {/* <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Enterprise
-                </a>
+                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  Belief 
+                </a> */}
                 {resources.map((resource) => (
                   <a
                     key={resource.name}
@@ -349,7 +345,7 @@ export default function Nav() {
                   >
                     {resource.name}
                   </a>
-                ))} */}
+                ))}
               </div>
               <div className="mt-6">
                 <Link

@@ -124,7 +124,7 @@ function classNames(...classes) {
                       alt="Workcation"
                     /> */}
                   </div>
-                  <blockquote className="mt-8 sm:h-full lg:h-[45vh]">
+                  <blockquote className="mt-8 sm:h-full lg:h-[35vh]">
                     <div className="relative text-lg font-medium text-white md:flex-grow">
                       {/* <svg
                         className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-sky-400"

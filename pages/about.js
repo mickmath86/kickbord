@@ -17,16 +17,16 @@ function about() {
   return (
    <>
    <Nav />
-   <div className="py-24 max-w-3xl text-7xl mx-auto md:max-w-6xl  font-light">
+   <div id="about" className="py-24 max-w-3xl  text-7xl mx-auto md:max-w-6xl  font-light">
     <div className="relative ">
       <div className="hidden md:block absolute "><img src="/images/ui/headbg.png" alt="" /></div>
         
     </div>
-    <div className="text-center max-w-5xl px-4 relative ">
+    <div className="text-left lg:text-center max-w-5xl px-8 relative ">
         <h2 className="mb-4">
           <span className="font-bold text-7xl">Kickbord</span>  is
         </h2>
-        <h3>
+        <h3 className="text-4xl text-left lg:text-center lg:text-7xl">
         a group of agency lifers that get <span className="underline text-sky-500">supercharged</span> at the idea of helping brands grow and develop into their full potential. 
         </h3>
     </div>
@@ -37,19 +37,19 @@ function about() {
 
 
    
-    <div>
-    <div className="space-y-12 ">
-        <h2 className="font-bold mt-24 ">
+    <div className="text-4xl lg:text-6xl lg:mt-24 px-8">
+    <div id="purpose"className=" space-y-6">
+        <h2 className="font-bold mt-24  ">
           Our Purpose
         </h2>
-        <h3> 
+        <h3 className=""> 
           is to work with brands to develop strategies that will help them grow and succeed in the ecommerce space and to provide guidance and advice on how to navigate the ever-changing landscape of ecommerce.
         </h3>
    
         <p className="text-4xl">If you're a brand looking to take your place in the next generation of brand greatness, we'd love to help you get there. Contact us today to learn more about what we can do for you.</p>
 
     </div> 
-    <div className="space-y-12 ">
+    <div id="belief" className="space-y-6 ">
         <h2 className="font-bold mt-24 ">
           Our Belief
         </h2>
@@ -73,7 +73,7 @@ function about() {
    {/* <AboutHero />
    <AboutContent /> */}
    {/* start */}
-   <div className="relative bg-white my-16 sm:py-24">
+   <div id="background" className="relative bg-white mb-16 sm:py-24">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div className="relative sm:py-16 lg:py-0">
           <div aria-hidden="true" className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
@@ -166,26 +166,48 @@ function about() {
       </div>
     </div>
     {/* end */}
-    <div className="bg-sky-700">
-      <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-          <span className="block">Boost your brand awareness.</span>
-          <span className="block">Start working with Kickbord today.</span>
-        </h2>
-        {/* <p className="mt-4 text-lg leading-6 text-sky-200">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
-        </p> */}
-        <Link
-          href="/schedule-a-call"
-         
-        >
-          <button  className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-sky-600 bg-white hover:bg-sky-50 sm:w-auto">
-                Get Started
-          </button>
-         
-        </Link>
-      </div>
-    </div>
+   
+    <div className="relative">
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+            <div className="mx-auto">
+              <div className="relative shadow-xl sm:overflow-hidden">
+                <div className="absolute inset-0">
+                  <img
+                    className="h-full w-full object-cover"
+                    src="/images/background.jpg"
+                    alt="People working on laptops"
+                  />
+                  <div className="absolute inset-0 bg-sky-900 mix-blend-multiply" />
+                </div>
+                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                  <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                    <span className="block text-sky-400">Boost your brand awareness.</span>
+                    <span className="block  text-white">Start working with Kickbord today.</span>
+                  </h1>
+                  
+                  <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                    <div className=" mx-auto">
+                      <Link
+                        href="/schedule-a-call"
+                        
+                      >
+                        <div className="flex cursor-pointer items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-sky-700 bg-white hover:bg-sky-50 sm:px-8">
+                          Schedule a call
+                        </div>
+                       
+                      </Link>
+                      {/* <a
+                        href="#"
+                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-500  hover:bg-opacity-70 sm:px-8"
+                      >
+                       Contact
+                      </a> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
    <Footer />
 
    </>
