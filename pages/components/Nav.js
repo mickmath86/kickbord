@@ -24,7 +24,8 @@ import {
   SpeakerphoneIcon, 
   ViewGridAddIcon, 
   ArrowsExpandIcon, 
-  MailOpenIcon
+  MailOpenIcon, 
+  ArrowNarrowRightIcon
 } from '@heroicons/react/outline'
 import { ChevronDownIcon,  } from '@heroicons/react/solid'
 import { IconOne, IconTwo, IconThree } from '../../icons'
@@ -35,7 +36,7 @@ const solutions = [
   {
     name: 'Media Advertising',
     href: '/solutions#media-advertising',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    description: 'Get a better understanding of where your traffic is coming from',
     icon: ArrowsExpandIcon,
   },
   // {
@@ -54,7 +55,7 @@ const solutions = [
   {
     name: 'Email Marketing',
     href: '/solutions#email-marketing',
-    description: "Connect with third-party tools that youre already using.",
+    description: "Perfectly time customer engagement with well-placed email campaigns",
     icon: MailOpenIcon,
   },
   {
@@ -105,7 +106,7 @@ export default function Nav() {
             <span className="sr-only">Kickbord</span>
             <Link href="/">
             <img
-              className="h-8 w-auto border-2 border-black rounded-md p-1 sm:h-10"
+              className="h-12 w-auto border-2 border-black cursor-pointer rounded-md p-1 sm:h-10"
               src="/images/logo.png"
               alt=""
             />
@@ -191,14 +192,14 @@ export default function Nav() {
           </Popover>
 
           <Link href="/about" >
-            <div className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <div className="text-base cursor-pointer font-medium text-gray-500 hover:text-gray-900">
                 About
             </div>
            
           </Link >
-          <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+          {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
             Docs
-          </a>
+          </a> */}
 
         {/* MORE Nav Drop down */}
         
@@ -256,9 +257,12 @@ export default function Nav() {
           <div>
           <div className="ml-8 whitespace-nowrap cursor-pointer inline-flex items-center shadow-md justify-center px-4 py-2 border border-transparent rounded-md  text-base font-medium text-white bg-sky-500 hover:bg-sky-700">
             <p>
-            Get Started 
-              </p>
-              
+               Get Started  <span className="ml-2" aria-hidden="true">&rarr;</span>{' '}
+            </p>
+            <div>
+            <ArrowNarrowRightIcon />  
+            </div>
+             
           </div>
           
 
@@ -286,7 +290,7 @@ export default function Nav() {
               <div className="flex items-center justify-between">
                 <div className="border-2 border-black rounded">
                   <img
-                    className="h-8 w-auto"
+                    className="h-12 w-auto"
                     src="/images/logo.png"
                     alt="Workflow"
                   />
@@ -324,15 +328,15 @@ export default function Nav() {
               
               <div className="grid grid-cols-2 gap-4">
                 <Link href="/about" >
-                  <div className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <div className="text-base cursor-pointer font-medium text-gray-900 hover:text-gray-700">
                       About
                   </div>
                   
                 </Link>
 
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                {/* <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                   Docs
-                </a>
+                </a> */}
 
                 {/* <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                   Enterprise
@@ -354,6 +358,7 @@ export default function Nav() {
                 >
                   <div  className="w-full mx-auto flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700">
                   <h3 className="bg-sky-600 mx-auto">Get Started</h3>
+                  {/* <ArrowNarrowRightIcon /> */}
                   </div>
                   
                   

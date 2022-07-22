@@ -2,10 +2,11 @@ import {React , useEffect} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Script from 'next/script'
-import Nav from './components/SimpleNav'
+import Nav from './components/Nav'
 import Typeform from './components/Typeform'
-import Calendly from './components/Calendly'
+
 import Footer from './components/Footer'
+
 
 
 
@@ -14,9 +15,9 @@ export default function scheduleACall() {
   return (
     <>  
     <Head>
-     
+    <title>Kickbord | Schedule a Call</title>
       {/* <Script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async /> */}
-
+     
     </Head>
      <Nav />
       <div className="mt-32 mb-16">
@@ -30,9 +31,10 @@ export default function scheduleACall() {
       
      
 
-      <div className="max-w-5xl mx-auto h-[100vh] lg:h-[75vh]">
+      <div className="max-w-5xl mx-auto h-[75vh] lg:h-[75vh]">
         <Typeform />
-      </div>
+       
+      </div>  
      <Footer />
     
     </>

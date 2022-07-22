@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
+import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
@@ -53,19 +54,22 @@ export default function Hero() {
                   <p className="mt-6 max-w-lg mx-auto text-center text-xl text-gray-200 sm:max-w-3xl">
                   Kickbord helps brands scale their online businesses by giving owners the tools they need to take control of their eCommerce brand and maximize return on ad spend.                   </p>
                   <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                    <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                      <a
-                        href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
+                    <div className=" mx-auto">
+                      <Link
+                        href="/schedule-a-call"
+                        
                       >
-                        Schedule a call
-                      </a>
-                      <a
+                        <div className="flex cursor-pointer items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
+                          Schedule a call
+                        </div>
+                       
+                      </Link>
+                      {/* <a
                         href="#"
                         className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-500  hover:bg-opacity-70 sm:px-8"
                       >
                        Contact
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>

@@ -67,6 +67,15 @@ function classNames(...classes) {
           },
         ],
       })
+    const Content = [
+      {
+        logo: "/images/logo.png", 
+        headline: "On a mission to empower brands", 
+        paragraph1: "There are so many moving parts and pieces, and it can be easy to quickly lose track of what's important. With all of the noise being put out by subpar ads, shifting audiences, and ever-chaning consumer desires, we understand the the struggle owners face when trying to effectively market their prodcuts on top of all the other responsibilities that fall on their shoulders.", 
+        paragraph2: "Kickbord is on a mission to provide brand owners the best marketing minds the industry has to offer so owners can go back to  doing what they do best - running their business. ", 
+
+      }
+    ]
 
     return (
       <div className="relative bg-white py-16 sm:py-24">
@@ -105,33 +114,33 @@ function classNames(...classes) {
                   alt=""
                 />
                 <div className="absolute inset-0 bg-sky-500 mix-blend-multiply" />
-                <div className="absolute inset-0 bg-gradient-to-t from-sky-600 via-sky-600 opacity-90" />
+                <div className="absolute inset-0 bg-gradient-to-t from-sky-200 via-sky-200 opacity-10" />
                 <div className="relative px-8">
                   <div>
-                    <img
+                    {/* <img
                       className="h-12"
                       src="https://tailwindui.com/img/logos/workcation.svg?color=white"
                       alt="Workcation"
-                    />
+                    /> */}
                   </div>
-                  <blockquote className="mt-8">
+                  <blockquote className="mt-8 sm:h-full lg:h-[45vh]">
                     <div className="relative text-lg font-medium text-white md:flex-grow">
-                      <svg
+                      {/* <svg
                         className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-sky-400"
                         fill="currentColor"
                         viewBox="0 0 32 32"
                         aria-hidden="true"
                       >
                         <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                      </svg>
-                      <p className="relative">
+                      </svg> */}
+                      {/* <p className="relative">
                         Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
                         Montes, magna cursus nulla feugiat dignissim id lobortis amet.
-                      </p>
+                      </p> */}
                     </div>
   
                     <footer className="mt-4">
-                      <p className="text-base font-semibold text-sky-200">Sarah Williams, CEO at Workcation</p>
+                      {/* <p className="text-base font-semibold text-sky-200">Sarah Williams, CEO at Workcation</p> */}
                     </footer>
                   </blockquote>
                 </div>
@@ -141,6 +150,7 @@ function classNames(...classes) {
   
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
             {/* Content area */}
+            {}
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <img className="border-2 rounded-md border-black w-32 mb-5" src="/images/logo.png" alt="" />
               <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
@@ -167,9 +177,9 @@ function classNames(...classes) {
               {/* 
                */}
               <div className="mt-10">
-                <a href="#" className="text-base font-medium text-sky-600">
+                <a href="/about" className="text-base font-medium text-sky-600">
                   {' '}
-                  Learn more about how we are changing the world <span aria-hidden="true">&rarr;</span>{' '}
+                  Learn more about how we are helping brands<span aria-hidden="true">&rarr;</span>{' '}
                 </a>
               </div>
             </div>

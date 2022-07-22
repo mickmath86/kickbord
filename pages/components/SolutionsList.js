@@ -5,47 +5,10 @@ import { useState } from 'react'
 // import BarChart from './BarChart'
 import { IconOne, IconTwo, IconThree, FacebookIcon } from '../../icons'
 import Link from 'next/link'
-const transferFeatures = [
-  {
-    id: 1,
-    name: 'Message',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: FacebookIcon,
-  },
-  {
-    id: 2,
-    name: 'Market',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ScaleIcon,
-  },
-  {
-    id: 3,
-    name: 'Measure',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: LightningBoltIcon,
-  },
-]
-const communicationFeatures = [
-  {
-    id: 1,
-    name: 'Mobile notifications',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: AnnotationIcon,
-  },
-  {
-    id: 2,
-    name: 'Reminder emails',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: MailIcon,
-  },
-]
 
-function Blue(text){
+
+
+function Background(color){
 return (
   <span className="font-bold text-sky-500">{text}</span>
 )
@@ -61,7 +24,7 @@ const content = [
         headline: "Media Advertising", 
         mainIcon: ArrowsExpandIcon, 
         description: "Paid media advertising is where Kickbord specializes, and it will drive your product campaign to new ROI heights. Facebook and Google Ads are two of the most effective media advertising platforms, and Kickbord will make sure that your product is getting in front of the right people, at the right time. With experienced Facebook and Google Ads managers, you can trust that your product campaign is in good hands.", 
-        subConent: ["Facebook Ads", "Google Ads"], 
+        subConent: ["Google Ads", "Facebook Ads", "Instagram"], 
         linkText: "Get Started", 
         getStartedUrl: "/schedule-a-call", 
         image: "/images/UI/ga-fb.png"
@@ -77,7 +40,8 @@ const content = [
       subConent: ["Market", "Message", "Moment", "Measure"], 
       linkText: "Get Started", 
       getStartedUrl: "/schedule-a-call", 
-      image: "/images/UI/M4.png"
+      image: "/images/UI/M4.png", 
+      specialColor: "text-sky-500"
 
     },
     {
@@ -85,8 +49,8 @@ const content = [
       idLabel: "email-marketing", 
       headline: "Email Marketing", 
       mainIcon: MailOpenIcon, 
-      subHeadline: "", 
-      description: "Looking to integrate Kickboard with the tools you already use? We've got you covered. Our integration abilities make it easy to connect Kickboard with the apps and systems you rely on every day. Kickboard enables you to quickly set up and get started using data-driven decision-making to improve brand performance.", 
+      subHeadline: "Perfectly time your customer engagement", 
+      description: "Email is a powerful marketing tool, and Kickbord makes it easy to automate your email campaigns to ensure that you're always engaging with your audience at the perfect time. Whether you're trying to reach prospective buyers or repeat customers, email marketing can help you achieve your goals. ", 
       subConent: [], 
       linkText: "Get Started", 
       getStartedUrl: "/schedule-a-call", 
@@ -157,7 +121,7 @@ export default function SolutionsList() {
                
                <div className="flex-row justify-items-start">
                    <h3 className="text-2xl z-100 font-extrabold odd:text-gray-800 even:text-white tracking-tight sm:text-3xl md:text-5xl xl:text-6xl">
-                       {item.headline} <span className="font-bold text-sky-500">{item.tag}</span>   
+                       {item.headline} <span className={`font-bold text-sky-500 bg-${item.backgroundColor}`}>{item.tag}</span>   
                    </h3>
                    <p className="mt-3 text-lg font-bold text-sky-900 xl:text-lg">
                      {item.subHeadline}      

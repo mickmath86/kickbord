@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Head from 'next/head'
 import Nav from './components/Nav'
 import SolutionsAbout from './components/SolutionsAbout'
 import SolutionsList from './components/SolutionsList'
@@ -89,9 +90,10 @@ import {
 
 function solutions() {
   return (
-
-    
     <>
+    <Head>
+      <title>Kickbord | Solutions</title>
+    </Head>
     <Nav />
     <header>
     <div className="mx-auto ">

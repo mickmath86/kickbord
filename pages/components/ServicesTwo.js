@@ -20,7 +20,8 @@ import {
   ArrowNarrowRightIcon, 
   ArrowsExpandIcon, 
   TrendingUpIcon, 
-  ViewGridAddIcon
+  ViewGridAddIcon, 
+  MailOpenIcon
 } from '@heroicons/react/outline'
 import Link from 'next/link'
 
@@ -50,26 +51,27 @@ import Link from 'next/link'
     },
     {
       id: 3, 
+      name: 'Email Marketing',
+      href: '/solutions#email-marketing',
+      description: "Perfectly time customer engagement with well-placed email campaigns",
+      icon: MailOpenIcon,
+    },
+    {
+      id: 4, 
         name: 'Conversion Rate Optimization',
       href: '/solutions#cvr-optimization',
       description: 'Build strategic funnels that will drive your customers to convert',
       icon: ViewGridAddIcon,
     },
     {
-        id: 4, 
+        id: 5, 
       name: 'Analytics',
       href: '/solutions#analytics',
       description: 'Get a better understanding of where your traffic is coming from and how its performing',
       icon: CubeTransparentIcon,
   
     },
-    {
-        id: 5, 
-      name: 'Integrations',
-      href: '/solutions#integrations',
-      description: "Connect with third-party tools that youre already using.",
-      icon: ChipIcon,
-    },
+   
     {
         id: 6, 
       name: 'Automations',
@@ -84,9 +86,9 @@ function ServicesTwo() {
   return (
     <div className="min-h-screen bg-gray-900 py-24">
         <div className="mx-auto text-center">
-            <h2 className="text-base font-semibold uppercase tracking-wider text-sky-600">Deploy faster</h2>
+            <h2 className="text-base font-semibold uppercase tracking-wider text-sky-600">Grow Faster</h2>
             <p className="mt-2 text-3xl font-extrabold tracking-tight text-sky-100 sm:text-4xl">
-                Everything you need to deploy your app
+                Everything you need to scale your brand
             </p>
             <p className="mx-auto my-5 px-5 max-w-prose text-xl text-gray-400">
                 Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper

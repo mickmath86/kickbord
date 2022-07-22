@@ -29,8 +29,9 @@ export default function Home() {
         <Hero />
         
         <About />
-        <Logos />
+        
         <ServicesTwo />
+        <Logos />
         <HeroCta />
         <Footer />
      
