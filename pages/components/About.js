@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 
 import { useState } from 'react'
+import link from 'next/link'
 import { Tab } from '@headlessui/react'
 
 const stats = [
@@ -177,10 +178,10 @@ function classNames(...classes) {
               {/* 
                */}
               <div className="mt-10">
-                <a href="/about" className="text-base font-medium text-sky-600">
+                <Link href="/about" className="text-base font-medium text-sky-600">
                   {' '}
                   Learn more about how we are helping brands<span aria-hidden="true">&rarr;</span>{' '}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
