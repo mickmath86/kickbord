@@ -179,8 +179,11 @@ function classNames(...classes) {
                */}
               <div className="mt-10">
                 <Link href="/about" className="text-base font-medium text-sky-600">
+                  <div>
                   {' '}
                   Learn more about how we are helping brands<span aria-hidden="true">&rarr;</span>{' '}
+                  </div>
+                  
                 </Link>
               </div>
             </div>
