@@ -14,7 +14,7 @@ const eslintConfig = [
   {
     // files: ["**/*.ts", "**/*.tsx"],
     rules: {
-      "@typescript-eslint/no-unused-expressions": "off",
+      // "@typescript-eslint/no-unused-expressions": "off",
     },
   },
 ];
