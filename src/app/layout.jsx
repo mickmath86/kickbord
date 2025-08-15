@@ -1,4 +1,5 @@
 import '@/styles/tailwind.css'
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata = {
   title: {
@@ -9,6 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <head>
         <link
@@ -24,5 +26,10 @@ export default function RootLayout({ children }) {
       </head>
       <body className="text-gray-950 antialiased">{children}</body>
     </html>
+    </ClerkProvider>
   )
 }
+
+
+
+

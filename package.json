@@ -10,6 +10,7 @@
     "typegen": "sanity schema extract --path=src/sanity/extract.json && sanity typegen generate && rm ./src/sanity/extract.json"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.31.1",
     "@headlessui/react": "^2.1.1",
     "@heroicons/react": "^2.1.4",
     "@number-flow/react": "^0.5.10",

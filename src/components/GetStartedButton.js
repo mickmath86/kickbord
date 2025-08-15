@@ -1,35 +1,21 @@
-'use client'
-import { useState } from 'react'
-import { Button } from './button'
+"use client";
 
-export default function GetStartedButton({ planPriceId }) {
-  const [loading, setLoading] = useState(false)
+import { useRouter } from "next/navigation";
+import { Button } from "./button";
 
-  const handleClick = async () => {
-    setLoading(true)
-    try {
-      const res = await fetch('/api/create-checkout-session', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ priceId: planPriceId }),
-      })
-      const data = await res.json()
-      if (data.url) {
-        window.location.href = data.url
-      }
-    } catch (err) {
-      console.error(err)
-    }
-    setLoading(false)
-  }
+export default function GetStartedButton({ priceId }) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/checkout?priceId=${priceId}`);
+  };
 
   return (
     <Button
       onClick={handleClick}
-      className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-      disabled={loading}
+   
     >
-      {loading ? 'Redirecting...' : 'Get Started'}
+      Get Started
     </Button>
-  )
+  );
 }

@@ -51,7 +51,7 @@ function Hero() {
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             {/* <Button href="#">Get started</Button> */}
-            <GetStartedButton planPriceId="price_1RwFTVFhIZScWR8taJKS59TE"/>
+            <GetStartedButton priceId="price_1RwFTVFhIZScWR8taJKS59TE"/>
             <Button variant="secondary" href="/pricing">
               See packages
             </Button>
