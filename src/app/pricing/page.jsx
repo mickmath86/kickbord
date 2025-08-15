@@ -83,7 +83,7 @@ const tiers = [
     priceMonthly: 299,
     href: '#',
     highlights: [
-      { description: 'Unlimited active team members' },
+      { description: 'Unlimited active teams members' },
       { description: 'Unlimited deal progress boards' },
       { description: 'Source leads from over 100 verified platforms' },
       { description: 'RadiantAI integrations' },
