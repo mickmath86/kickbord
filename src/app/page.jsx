@@ -67,7 +67,7 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          A snapshot of your entire sales pipeline.
+          A snapshot of your entire sales pipelines.
         </Heading>
         <Screenshot
           width={1216}
