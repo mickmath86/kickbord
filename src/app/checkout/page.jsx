@@ -1,9 +1,9 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 
-export default function CheckoutPage() {
+function CheckoutContent() {
   const searchParams = useSearchParams();
   const priceId = searchParams.get("priceId");
 
@@ -16,15 +16,8 @@ export default function CheckoutPage() {
       })
         .then((res) => res.json())
         .then((data) => {
-          if (data.url) {
-            window.location.href = data.url;
-          } else {
-            console.error("Stripe session creation failed:", data);
-          }
-        })
-        .catch((err) => console.error("Fetch error:", err));
-    } else {
-      console.error("No priceId found in query string");
+          if (data.url) window.location.href = data.url;
+        });
     }
   }, [priceId]);
 
@@ -32,5 +25,13 @@ export default function CheckoutPage() {
     <div className="flex justify-center items-center h-screen">
       <h1 className="text-xl">Redirecting to checkout...</h1>
     </div>
+  );
+}
+
+export default function CheckoutPage() {
+  return (
+    <Suspense fallback={<div className="flex justify-center items-center h-screen"><h1 className="text-xl">Loading checkout...</h1></div>}>
+      <CheckoutContent />
+    </Suspense>
   );
 }
