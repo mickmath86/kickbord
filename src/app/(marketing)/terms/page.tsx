@@ -79,7 +79,7 @@ export default function TermsPage() {
                             Legal Information
                         </h1>
                         <p className="text-gray-600">
-                            Last Updated: February 21, 2025
+                            Last Updated: February 21, 2026
                         </p>
                     </div>
                 </FadeInView>
@@ -200,12 +200,26 @@ export default function TermsPage() {
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                                     10. Contact Information
                                 </h3>
-                                <p className="text-gray-700 leading-relaxed">
-                                    If you have any questions about these Terms of Service, please contact us at:{' '}
-                                    <a href="mailto:mike@kickbord.com" className="text-sky-600 hover:text-sky-700 underline">
-                                        mike@kickbord.com
-                                    </a>
+                                <p className="text-gray-700 leading-relaxed mb-4">
+                                    If you have any questions about these Terms of Service, please contact us:
                                 </p>
+                                <div className="p-4 bg-gray-50 rounded-lg">
+                                    <p className="text-gray-900 font-medium">Fleet Ventures Inc. (dba Kickbord)</p>
+                                    <p className="text-gray-700 mt-2">141 Eugenia Drive</p>
+                                    <p className="text-gray-700">Ventura, CA 93003</p>
+                                    <p className="text-gray-700 mt-2">
+                                        Phone:{' '}
+                                        <a href="tel:+18057166513" className="text-sky-600 hover:text-sky-700 underline">
+                                            (805) 716-6513
+                                        </a>
+                                    </p>
+                                    <p className="text-gray-700">
+                                        Email:{' '}
+                                        <a href="mailto:mike@kickbord.com" className="text-sky-600 hover:text-sky-700 underline">
+                                            mike@kickbord.com
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -284,7 +298,7 @@ export default function TermsPage() {
                                         Important SMS Disclosure:
                                     </p>
                                     <p className="text-gray-700 mt-2 leading-relaxed">
-                                        By providing your phone number when booking an appointment, you consent to receive appointment-related SMS text messages from Kickbord on behalf of the business you are booking with. These messages may include appointment confirmations, reminders, and updates.
+                                        By providing your phone number when booking an appointment, you consent to receive appointment-related SMS text messages from Kickbord on behalf of the business you are booking with. These messages may include appointment confirmations, reminders, and updates. Message frequency varies.
                                     </p>
                                     <p className="text-gray-700 mt-2 leading-relaxed">
                                         Message and data rates may apply. You can opt out at any time by replying <strong>STOP</strong> to any text message. For help, reply <strong>HELP</strong>.
@@ -375,12 +389,20 @@ export default function TermsPage() {
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                                     12. Contact Us
                                 </h3>
-                                <p className="text-gray-700 leading-relaxed">
-                                    If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
+                                <p className="text-gray-700 leading-relaxed mb-4">
+                                    If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
                                 </p>
-                                <div className="mt-4 p-4 bg-gray-50 rounded-lg">
+                                <div className="p-4 bg-gray-50 rounded-lg">
                                     <p className="text-gray-900 font-medium">Fleet Ventures Inc. (dba Kickbord)</p>
-                                    <p className="text-gray-700 mt-1">
+                                    <p className="text-gray-700 mt-2">141 Eugenia Drive</p>
+                                    <p className="text-gray-700">Ventura, CA 93003</p>
+                                    <p className="text-gray-700 mt-2">
+                                        Phone:{' '}
+                                        <a href="tel:+18057166513" className="text-sky-600 hover:text-sky-700 underline">
+                                            (805) 716-6513
+                                        </a>
+                                    </p>
+                                    <p className="text-gray-700">
                                         Email:{' '}
                                         <a href="mailto:mike@kickbord.com" className="text-sky-600 hover:text-sky-700 underline">
                                             mike@kickbord.com
