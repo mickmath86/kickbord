@@ -6,7 +6,7 @@ export function KickbordFooter() {
           Kickbord
         </p>
         <p className="text-sm text-muted-foreground">
-          The AI receptionist that never misses a call.
+          A Fleet Ventures company
         </p>
         <p className="text-xs text-muted-foreground mt-4">
           &copy; 2026 Fleet Ventures Inc
