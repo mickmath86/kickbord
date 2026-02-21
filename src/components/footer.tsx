@@ -57,7 +57,7 @@ export default function FooterSection() {
                             <Logo />
                         </Link>
 
-                        <p className="text-muted-foreground text-balance text-sm">Tailark is a platform for building AI-powered applications.</p>
+                        <p className="text-muted-foreground text-balance text-sm">Kickbord — a Fleet Ventures company</p>
                     </div>
 
                     <div className="col-span-3 grid gap-6 sm:grid-cols-3">
@@ -126,7 +126,7 @@ export default function FooterSection() {
                     className="bg-size-[6px_1px] h-px bg-[linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] bg-repeat-x opacity-25"
                 />
                 <div className="flex flex-wrap justify-between gap-4">
-                    <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} Tailark, All rights reserved </span>
+                    <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} Fleet Ventures Inc. All rights reserved.</span>
 
                     <div className="ring-foreground/5 bg-card flex items-center gap-2 rounded-full border border-transparent py-1 pl-2 pr-4 shadow ring-1">
                         <div className="relative flex size-3">
