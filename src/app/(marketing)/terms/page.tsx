@@ -180,7 +180,25 @@ export default function TermsPage() {
 
                             <div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    8. Modifications to Terms
+                                    8. Carrier Liability Disclaimer
+                                </h3>
+                                <p className="text-gray-700 leading-relaxed mb-3">
+                                    SMS messages sent through Kickbord are transmitted via third-party wireless carriers. We and our wireless carrier partners are not liable for delayed or undelivered messages. Message delivery is subject to:
+                                </p>
+                                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                                    <li>Effective transmission by your wireless service provider</li>
+                                    <li>Network availability and coverage limitations</li>
+                                    <li>Carrier-specific message filtering and blocking policies</li>
+                                    <li>Device compatibility and settings</li>
+                                </ul>
+                                <p className="text-gray-700 leading-relaxed mt-3">
+                                    Carriers are not responsible for the content of messages sent through our service. You acknowledge that wireless carriers are not liable for any claims, damages, or losses arising from SMS communications sent via Kickbord.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    9. Modifications to Terms
                                 </h3>
                                 <p className="text-gray-700 leading-relaxed">
                                     We reserve the right to modify these Terms at any time. We will provide notice of material changes by updating the "Last Updated" date at the top of this page. Your continued use of Kickbord's services after such modifications constitutes your acceptance of the updated Terms.
@@ -189,7 +207,7 @@ export default function TermsPage() {
 
                             <div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    9. Governing Law
+                                    10. Governing Law
                                 </h3>
                                 <p className="text-gray-700 leading-relaxed">
                                     These Terms shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of Kickbord's services shall be subject to the exclusive jurisdiction of the state and federal courts located in California.
@@ -198,7 +216,7 @@ export default function TermsPage() {
 
                             <div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    10. Contact Information
+                                    11. Contact Information
                                 </h3>
                                 <p className="text-gray-700 leading-relaxed mb-4">
                                     If you have any questions about these Terms of Service, please contact us:
@@ -369,7 +387,42 @@ export default function TermsPage() {
 
                             <div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    10. Children's Privacy
+                                    10. Cookie and Tracking Practices
+                                </h3>
+                                <p className="text-gray-700 leading-relaxed mb-3">
+                                    We use cookies and similar tracking technologies to improve your experience with our services. These technologies help us:
+                                </p>
+                                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                                    <li>Remember your preferences and settings</li>
+                                    <li>Understand how you interact with our booking system</li>
+                                    <li>Analyze usage patterns to improve our services</li>
+                                    <li>Ensure the security and proper functioning of our platform</li>
+                                </ul>
+                                <p className="text-gray-700 leading-relaxed mt-3">
+                                    We may use both session cookies (which expire when you close your browser) and persistent cookies (which remain on your device until deleted or expired). You can control cookie settings through your browser preferences, though disabling cookies may affect the functionality of our services. We do not use cookies to track you across third-party websites for advertising purposes.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    11. Mobile Information Sharing
+                                </h3>
+                                <p className="text-gray-700 leading-relaxed mb-3">
+                                    When you provide your mobile phone number to book an appointment, we share this information with:
+                                </p>
+                                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                                    <li><strong>The Business Client:</strong> Your phone number and appointment details are shared with the business you are booking with so they can contact you regarding your appointment</li>
+                                    <li><strong>SMS Service Providers:</strong> We use third-party SMS platforms (including Go High Level) to send appointment confirmations and reminders to your mobile device</li>
+                                    <li><strong>Wireless Carriers:</strong> Your mobile carrier receives and delivers SMS messages sent through our service</li>
+                                </ul>
+                                <p className="text-gray-700 leading-relaxed mt-3">
+                                    Your mobile phone number will only be used for appointment-related communications as described in this Privacy Policy. We do not share your mobile number with third parties for marketing purposes unrelated to your appointment. You can opt out of SMS communications at any time by replying STOP.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    12. Children's Privacy
                                 </h3>
                                 <p className="text-gray-700 leading-relaxed">
                                     Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately so we can delete it.
@@ -378,7 +431,7 @@ export default function TermsPage() {
 
                             <div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    11. Changes to This Privacy Policy
+                                    13. Changes to This Privacy Policy
                                 </h3>
                                 <p className="text-gray-700 leading-relaxed">
                                     We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by updating the "Last Updated" date at the top of this page. We encourage you to review this Privacy Policy periodically.
@@ -387,7 +440,7 @@ export default function TermsPage() {
 
                             <div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    12. Contact Us
+                                    14. Contact Us
                                 </h3>
                                 <p className="text-gray-700 leading-relaxed mb-4">
                                     If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
