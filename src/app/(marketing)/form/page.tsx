@@ -19,11 +19,13 @@ export default function FormPage() {
         phone: '',
         smsConsent: false
     })
+    const [submitted, setSubmitted] = useState(false)
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
         // Handle form submission here
         console.log('Form submitted:', formData)
+        setSubmitted(true)
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -54,19 +56,21 @@ export default function FormPage() {
                                     </p>
                                 </div>
 
-                                {/* Right Column - Form */}
+                                {/* Right Column - Form or Success Message */}
                                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-                                    {/* Business Name */}
-                                    <div className="text-center mb-6">
-                                        <h2 className="text-gray-900 text-2xl font-semibold mb-2">
-                                            Get Started with Kickbord
-                                        </h2>
-                                        <p className="text-sm text-gray-600">
-                                            Fleet Ventures Inc. (dba Kickbord)
-                                        </p>
-                                    </div>
+                                    {!submitted ? (
+                                        <>
+                                            {/* Business Name */}
+                                            <div className="text-center mb-6">
+                                                <h2 className="text-gray-900 text-2xl font-semibold mb-2">
+                                                    Get Started with Kickbord
+                                                </h2>
+                                                <p className="text-sm text-gray-600">
+                                                    Fleet Ventures Inc. (dba Kickbord)
+                                                </p>
+                                            </div>
 
-                                <form onSubmit={handleSubmit} className="space-y-6">
+                                            <form onSubmit={handleSubmit} className="space-y-6">
                                     {/* First Name */}
                                     <div>
                                         <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
@@ -172,11 +176,37 @@ export default function FormPage() {
                                         Submit
                                     </Button>
 
-                                    {/* Fleet Ventures DBA Notice */}
-                                    <p className="text-xs text-gray-500 text-center">
-                                        Kickbord is a dba of Fleet Ventures Inc.
-                                    </p>
-                                </form>
+                                                {/* Fleet Ventures DBA Notice */}
+                                                <p className="text-xs text-gray-500 text-center">
+                                                    Kickbord is a dba of Fleet Ventures Inc.
+                                                </p>
+                                            </form>
+                                        </>
+                                    ) : (
+                                        /* Success Message */
+                                        <div className="text-center py-12">
+                                            <div className="mb-6">
+                                                <svg className="mx-auto h-16 w-16 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                </svg>
+                                            </div>
+                                            <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+                                                Thank You!
+                                            </h2>
+                                            <p className="text-lg text-gray-600 mb-6">
+                                                We've received your information and will be in touch soon.
+                                            </p>
+                                            <p className="text-gray-600 mb-8">
+                                                A member of our team will reach out to you shortly to discuss how Kickbord can help your business never miss another call.
+                                            </p>
+                                            <Button
+                                                onClick={() => setSubmitted(false)}
+                                                variant="outline"
+                                                className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50">
+                                                Submit Another Response
+                                            </Button>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
