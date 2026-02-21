@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckCircle2 } from 'lucide-react'
+import { CheckCircle2, Phone } from 'lucide-react'
 import { CodeBlockIllustration } from '@/components/illustrations/code-block-illustration'
 import Image from 'next/image'
 import { LogoIcon } from '@/components/logo'
@@ -62,7 +62,7 @@ export const HeroIllustration = () => {
                                                 </div>
                                             </div>
 
-                                            <span className="w-full pt-6 font-mono text-[10px] uppercase">Experience seamless payments.</span>
+                                            <span className="w-full pt-6 font-mono text-[10px] uppercase">Seamless booking experience.</span>
                                         </div>
                                     </div>
                                     <div className="grid grid-cols-2 grid-rows-2 gap-2 rounded-l-2xl border-y border-l p-2">
@@ -223,8 +223,11 @@ export const HeroIllustration = () => {
                                                     <div className="bg-foreground size-0.75 m-auto rounded-full"></div>
                                                 </div>
                                             </div>
-                                            <div className="flex items-center justify-center px-2 py-1">
-                                                <span className="font-mono text-xs">API</span>
+                                            <div className="flex flex-row items-center justify-center px-2 py-1.5 gap-0.5">
+                                                <svg className="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                </svg>
+                                                <span className="text-[1 rem] font-medium text-gray-700">Client Caller</span>
                                             </div>
                                             <div className="grid grid-cols-[auto_1fr_auto] items-center gap-1">
                                                 <div className="flex size-2">
@@ -361,10 +364,10 @@ export const HeroIllustration = () => {
                                                     <div className="bg-foreground size-0.75 m-auto rounded-full"></div>
                                                 </div>
                                             </div>
-                                            <div className="flex items-center justify-center px-2">
-                                                <span className="flex items-center gap-2 font-mono text-xs">
-                                                    <CheckCircle2 className="size-3 stroke-emerald-800 *:first:fill-emerald-500/35" />
-                                                    <span>APP Connected</span>
+                                            <div className="flex items-center justify-center px-2 py-1">
+                                                <span className="flex items-center gap-2 font-mono text-[rem 1]">
+                                                    <Phone className="size-6 text-sky-600" />
+                                                    <span>Inbound Lead</span>
                                                 </span>
                                             </div>
                                             <div className="grid grid-cols-[auto_1fr_auto] items-center gap-1">
@@ -462,7 +465,7 @@ export const HeroIllustration = () => {
                                                 </div>
                                             </div>
 
-                                            <span className="w-full pt-6 font-mono text-[10px] uppercase">Experience seamless payments.</span>
+                                            <span className="w-full pt-6 font-mono text-[10px] uppercase">Seamless booking experience.</span>
                                         </div>
 
                                         <div>
@@ -510,9 +513,38 @@ export const HeroIllustration = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="relative pb-2 pr-2">
-                                    <div className="bg-card/75 ring-border relative h-40 overflow-hidden rounded-xl shadow-lg ring-1 backdrop-blur">
-                                        <CodeBlockIllustration />
+                                <div className="relative pb-8 pr-2">
+                                    <div className="bg-white ring-border relative h-40 overflow-hidden rounded-xl shadow-lg ring-1 backdrop-blur p-4">
+                                        <div className="flex items-start gap-3">
+                                            <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                                                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                </svg>
+                                            </div>
+                                            <div className="flex-1 pb-32">
+                                                <div className="text-base font-semibold text-gray-900 mb-0.5">Appointment Booked</div>
+                                                <div className="text-sm text-gray-500 mb-4">Confirmed</div>
+                                                
+                                                <div className="space-y-2.5">
+                                                    <div className="flex items-center gap-2.5 text-sm text-gray-700">
+                                                        <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                                        </svg>
+                                                        <span>Tomorrow, 2:00 PM</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2.5 text-sm text-gray-700">
+                                                        <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                        </svg>
+                                                        <span>New Client</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div className="m-4 text-xs text-gray-400 text-right">
+                                                    Booked by Kickbord AI
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -522,7 +554,7 @@ export const HeroIllustration = () => {
             </div>
             <div className="aspect-72/41 lg:hidden">
                 <Image
-                    src="https://res.cloudinary.com/dohqjvu9k/image/upload/v1757917121/hero-illustration_nl1gdn.png"
+                    src="/hero-image3.png"
                     alt="tailark hero section"
                     width={833}
                     height={469}
@@ -538,21 +570,38 @@ export const HeroIllustration = () => {
 
 const Card = () => {
     return (
-        <div className="ring-foreground/15 bg-background relative z-10 flex aspect-video w-full flex-col justify-between overflow-hidden rounded-2xl border border-transparent px-6 py-5 shadow-2xl shadow-sky-950/15 ring-1">
-            <div className="flex justify-between">
-                <CardChip />
-                <Visa />
+        <div className="ring-blue-500/20 bg-white relative z-10 flex aspect-video w-full flex-col justify-between overflow-hidden rounded-2xl border border-blue-100 px-6 py-5 shadow-2xl shadow-blue-950/15 ring-1">
+            <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-sm bg-gray-200 border-black border-2 flex items-center justify-center p-2">
+                        <Image 
+                            src="/kickbord-mark.png" 
+                            alt="Kickbord" 
+                            width={24} 
+                            height={24}
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
+                    <div>
+                        <div className="text-sm font-semibold text-gray-900">Kickbord AI</div>
+                        <div className="text-xs text-gray-500">Voice Agent</div>
+                    </div>
+                </div>
+                <div className="flex items-center gap-1.5">
+                    <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                    <span className="text-xs font-medium text-green-600">Active</span>
+                </div>
             </div>
 
-            <div className="flex justify-between">
-                <div className="space-y-0.5 *:block">
-                    <span className="text-muted-foreground text-xs">Méschac Irung</span>
-                    <span className="font-mono text-sm font-medium">5367 4567 8901 2345</span>
+            <div className="space-y-2">
+                <div className="flex items-center gap-2 text-blue-600">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span className="text-xs font-medium">Incoming Call</span>
                 </div>
-                <div className="space-y-0.5 *:block">
-                    <span className="text-muted-foreground text-xs">Exp.</span>
-                    <span className="font-mono text-sm font-medium">12/25</span>
-                </div>
+                <div className="text-sm font-semibold text-gray-900">New Client Inquiry</div>
+                <div className="text-xs text-gray-500">Answering automatically...</div>
             </div>
         </div>
     )
